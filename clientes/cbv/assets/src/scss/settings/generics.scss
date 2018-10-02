@@ -1,0 +1,223 @@
+﻿body {
+    background: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: inherit !important;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    text-align: center;
+    visibility: visible;
+    margin: auto;
+}
+
+p {
+    font-family: 'Gotham-Light';
+    font-size: 18px;
+    text-align: left;
+    color: #5b5b5b;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+h1 {
+    font-family: 'Roboto-Black';
+    font-size: 40px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+h2 {
+    font-family: 'Gotham-Black';
+    font-size: 35px;
+    text-align: left;
+    color: #00913d;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+     @include media-breakpoint-down(xs) {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+h3 {
+    font-family: 'Roboto-Regular';
+    font-size: 30px;
+    text-align: center;
+    color: #aba7a6;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 20px;
+    }
+}
+
+.d-contents {
+    display: contents !important;
+}
+
+.rotate-270{
+    transform: rotate(270deg);
+}
+
+.seta-esq, .seta-dir {
+    background: url(../img/icos/right-arrow.svg);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-left: -30px;
+}
+
+.circulo {
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    padding: 4px;
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    margin: auto;
+    bottom: -50px;
+
+    &.verde {
+        border: 1px solid rgba(26, 134, 58, .5);
+    }
+
+    &-inner {
+        border: 2px solid rgba(255, 255, 255, .75);
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        padding: 3px;
+
+        &.verde {
+            border: 1px solid rgba(26, 134, 58, .5);
+        }
+    }
+}
+
+.icone-container {
+    width: 85px;
+    height: 85px;
+    border: none;
+    background: #e5e5e5;
+    border-radius: 50%;
+    position: absolute;
+    padding-left: 27px;
+    padding-top: 13px;
+
+    &.verde {
+        background: #198338;
+    }
+
+    .icone {
+        width: 30px;
+        height: 30px;
+
+        &.verde {
+            color: #198338;
+        }
+    }
+}
+
+.mouse-container {
+    width: 85px;
+    height: 85px;
+    border: none;
+    background: #e5e5e5;
+    color: #1b6330;
+    border-radius: 50%;
+    position: absolute;
+
+    .mouse_scroll {
+        transform: translateY(-125px) scale(0.7);
+    }
+}
+
+.cta {
+    background-image: linear-gradient(to right, #ed4300, #ff8400);
+    box-shadow: rgba(0,0,0,0.5) 0px 10px 25px;
+    border-radius: 15px;
+    padding: 9px 25px;
+    margin-top: 15px;
+    transition: 0.5s;
+    height: 45px;
+    display: inline-block;
+
+    p {
+        font-family: 'Gotham-Bold';
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 40px;
+        p{
+        font-size: 14px;
+        margin: 0;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        height: 30px;
+        padding: 6px 25px;
+        p{
+        font-size: 12px;
+        }
+    }
+}
+
+.owl-dot{
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.5;
+    width: 15px;
+    height: 15px;
+    margin: 0 10px; 
+    outline: none;
+
+    &.active{
+        opacity: 1;
+    }
+}

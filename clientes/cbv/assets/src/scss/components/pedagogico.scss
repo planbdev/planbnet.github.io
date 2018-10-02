@@ -1,0 +1,124 @@
+﻿.pedagogico {
+    background: no-repeat top center url(../img/banners/pedagogico-bg.png);
+    background-size: cover;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 35px;
+    }
+
+    .introducao{
+        h2, p{
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .bloco {
+        width: 100%;
+        height: 350px;
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 8px;
+        text-align: center;
+        position: relative;
+        vertical-align: top;
+        text-align: center;
+
+        @include media-breakpoint-down(md) {
+           .borda {
+                width: 92%;
+                height: 300px;
+                margin-top: -293px;
+                background-size: 100% 100%;
+            }
+           .corpo {
+               width: 83%;
+                padding-top: 25px;
+                height: 280px;
+               }
+
+           .cta{
+               bottom: 50px;
+           }
+        }
+
+        @include media-breakpoint-down(sm) {
+                       .corpo {
+                width: 78%;
+                padding-top: 35px;
+                margin-left: 12%;
+               }
+            }
+                @include media-breakpoint-down(xs) {
+                        height: 320px;
+                        .broda{
+                            height: 276px;
+                        }
+                    .corpo{
+                        width: 63%;
+                        margin-left: auto;
+                    }
+                .cta{
+                    max-width: 200px;
+                    bottom: 28px;
+                }
+            }
+
+        .cta{
+            background-image: linear-gradient(to right, #ed4300, #ff8400);
+            height: 35px;
+            box-shadow: rgba(0,0,0,.2) 0 10px 25px;
+            bottom: 25px;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            margin: auto;
+
+            p{
+                font-size: 13px;
+            }
+        }
+
+        .borda {
+            z-index: 1;
+            background: no-repeat left center url(../img/icos/bloco-verde-borda-v2.svg);
+            width: 95%;
+            height: 315px;
+            margin-top: -320px;
+        }
+
+        .corpo {
+            border-radius: 15px;
+            background: #fff;
+            width: 91%;
+            height: 310px;     
+            text-align: center;
+            padding: 30px 20px 20px;
+            max-width: 205px;
+            margin: auto;
+
+            h2 {
+                text-align: center;
+                font-size: 16px;
+            }
+
+            p{
+                text-align: center;
+                line-height: 1.2;
+            }
+
+            .icone {
+                width: 80px;
+                height: auto;
+                margin: auto;
+
+                @include media-breakpoint-down(md) {
+                    width: 60px;
+                }
+            }
+        }
+    }
+}

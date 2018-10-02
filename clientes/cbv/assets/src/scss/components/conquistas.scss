@@ -1,0 +1,107 @@
+﻿.conquistas {
+    background: #e5e5e5;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    position: relative;
+    
+    @include media-breakpoint-down(sm) {
+        padding-top: 35px;
+    }
+
+    .cta-container {
+        width: 100%;
+        margin-top: -70px;
+
+        @include media-breakpoint-down(md) {
+            margin-top: -135px;
+        }
+
+        @include media-breakpoint-down(sm) {
+                margin-top: -40px;
+        }
+    }
+
+    h2, p{
+        text-align: center;
+    }
+
+    .blocos{
+        background: no-repeat center url(../img/banners/conquistas-bg.svg);
+        background-size: 80%;
+        display: flex;
+        height: 400px;
+        margin: auto;
+        width: 100%;
+
+        @include media-breakpoint-down(md) {
+            display: flex;
+
+            .bloco {
+                transform: scale(0.7);
+                margin-left: -15px;
+                margin-right: -40px;
+                margin-top: 10px;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            margin-top: -40px;
+            .bloco {
+                transform: scale(.6);
+                margin: 10px -35px -80px;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+
+
+    .bloco {
+        width: 225px;
+        height: 225px;
+        display: table-cell;
+        margin: auto;
+        margin-top: 60px;
+
+        .borda {
+            z-index: 1;
+            background: no-repeat center url(../img/icos/bloco-verde-borda.svg);
+            width: 218px;
+            height: 218px;
+            margin-top: -225px;
+        }
+
+        .corpo {
+            background: no-repeat center url(../img/icos/bloco-verde.svg);
+            width: 218px;
+            height: 218px;
+            margin-left: 7px;
+            margin-top: 7px;
+            text-align: center;
+            padding: 20px 21px 20px;
+            display: flex;
+
+            .conteudo{
+                vertical-align: middle;
+                margin: auto;
+            }
+
+            .numero{
+                font-size: 45px;
+            }
+
+            h2 {
+                text-align: center;
+                margin: 0;
+                font-size: 16px;
+                color: #fff;
+            }
+
+            .icone {
+                width: 80px;
+                height: auto;
+            }
+        }
+    }
+    }
+}

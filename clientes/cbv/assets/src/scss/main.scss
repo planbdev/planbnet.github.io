@@ -1,0 +1,33 @@
+﻿//Libs
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/mixins.scss";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/_utilities.scss";
+
+@import "libs/owl-caroussel.scss";
+@import "libs/owl-theme.scss";
+@import "libs/featherlight.scss";
+@import "libs/featherlight.gallery.scss";
+@import "libs/mouse-scroll.scss";
+@import "libs/animate.scss";
+@import "libs/stack-cards.scss";
+ 
+//Settings 
+@import "settings/fonts.scss";
+@import "settings/colors.scss";
+@import "settings/generics.scss";
+@import "settings/animations.scss";
+
+//Components
+@import "components/footer.scss";
+@import "components/header.scss";
+@import "components/banner.scss";
+@import "components/valores.scss";
+@import "components/pedagogico.scss";
+@import "components/conquistas.scss";
+@import "components/programas.scss";
+@import "components/form.scss";
+@import "components/menu-mobile.scss";
+

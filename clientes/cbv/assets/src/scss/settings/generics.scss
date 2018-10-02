@@ -178,7 +178,7 @@ h3 {
     border-radius: 15px;
     padding: 9px 25px;
     margin-top: 15px;
-    transition: 0.5s;
+    transition: background-image 0.5s;
     height: 45px;
     display: inline-block;
 
@@ -188,6 +188,11 @@ h3 {
         font-size: 18px;
         text-align: center;
         text-transform: uppercase;
+    }
+
+    &:hover{
+        box-shadow: none !important;
+        background-image: linear-gradient(to right, #ff8400, #ed4300);
     }
 
     @include media-breakpoint-down(md) {

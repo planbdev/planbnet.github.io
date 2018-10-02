@@ -30,5 +30,22 @@
 
     .imagens{
         height: calc(85vh - 100px);
+        position:relative;
+        text-align: right;
+
+
+        .menina{
+            max-height: 100%;
+            @include media-breakpoint-down(md) {
+                margin-left: -115px;
+            }
+        }
+
+        .menino{
+            max-height: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
     }
 }

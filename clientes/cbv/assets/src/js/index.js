@@ -2,6 +2,7 @@
 window.$ = $;
 window.jQuery = $;
 jQuery = $;
+import WOW from '../../node_modules/wow.js';
 import '../../node_modules/owl.carousel';
 import '../../node_modules/@fancyapps/fancybox';
 import '../../node_modules/bootstrap-datepicker';
@@ -9,7 +10,13 @@ import '../js/featherlight.js';
 import '../js/featherlight.gallery.js';
 
 $("document").ready(function(){
-    
+    var wow = new WOW(
+    {
+        mobile: false
+    });
+
+    wow.init();
+
     $.fn.extend({
         animateCss: function(animationName, callback) {
             var animationEnd = (function(el) {

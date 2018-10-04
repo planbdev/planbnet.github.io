@@ -1,0 +1,51 @@
+﻿.banner {
+    height: 85vh;
+    overflow: hidden;
+    background: no-repeat center url(../img/banners/destaque-bg.png);
+    background-size: cover;
+    max-height: 1000px;
+    padding-top: 100px;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+        text-align: center;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding-top: 15px;
+    }
+
+    .container, .row{
+        height: 100%;
+    }
+
+    .conteudo{
+
+        margin: auto;
+
+        h2, p{
+            color: #fff;
+        }
+    }
+
+    .imagens{
+        height: calc(85vh - 100px);
+        position:relative;
+        text-align: right;
+
+
+        .menina{
+            max-height: 100%;
+            @include media-breakpoint-down(md) {
+                margin-left: -115px;
+            }
+        }
+
+        .menino{
+            max-height: 100%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+﻿.programas {
+    background: #198338;
+    padding-top: 70px;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+        padding-top: 35px;
+        .stacked-cards {
+    height: 300px;
+        .card{
+            padding: 5px 10px;
+        }
+        }
+    }
+
+    .introducao {
+        h2, p {
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .botoes {
+        position: absolute;
+        top: 62%;
+
+        .seta-esq, .seta-dir {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: #fff;
+            background-image: url(./../img/icos/seta.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            border-radius: 50%;
+            float: right;
+            margin: 0;
+        }
+
+        .seta-dir {
+            float: left;
+            transform: rotate(180deg);
+        }
+
+        @include media-breakpoint-down(sm) {
+            .seta-esq, .seta-dir {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+            position: relative;
+            margin-top: -63px;
+        }
+    }
+
+    .conteudo {
+        transform: rotate(180deg);
+        margin: auto;
+
+        .logos {
+            margin: auto;
+            display: table;
+
+            img {
+                display: inline-block;
+                height: 75px;
+                width: auto;
+
+                @include media-breakpoint-down(lg) {
+                    height: 65px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    display: block;
+                    margin: auto;
+                    height: 50px;
+                }
+            }
+        }
+
+        .icos{
+             margin: auto;
+            display: table;
+            
+            img {
+                height: 75px;
+                width: auto;
+
+                @include media-breakpoint-down(lg) {
+                    height: 65px;
+                }
+                @include media-breakpoint-down(sm) {
+                    height: 50px;
+                }
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .titulo {
+            font-family: "Gotham-Bold";
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .inscricao {
+            position: relative;
+            margin: auto;
+            display: table;
+
+            p {
+                color: #fb7600;
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .arrow-container {
+                height: 20px;
+                display: inline-block;
+
+                .arrow-scroll-down {
+                    padding-top: 25px;
+                    }
+
+                .arrow-down{
+                    border-top: 1px solid #fb7600;
+                    border-right: 1px solid #fb7600;
+                }
+
+                .arrow-cable {
+                    left: 9px;
+                    background: #fb7600;
+                    height: 35px;
+                }
+            }
+
+            &:hover {
+                .arrow-cable {
+                    -webkit-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+                    /* Safari 4+ */
+                    -moz-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+                    /* Fx 5+ */
+                    -o-animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+                    /* Opera 12+ */
+                    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+                    /* IE 10+, Fx 29+ */
+                }
+            }
+        }
+    }
+}

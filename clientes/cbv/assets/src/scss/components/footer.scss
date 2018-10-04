@@ -1,0 +1,25 @@
+﻿footer {
+    background: #686a6c;
+    
+    p {
+        font-family: "Gotham-Bold";
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 16px;
+        margin: 10px auto;
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 12px;
+        }
+    }
+
+    .planB-logo{
+        float: right;
+        margin-top: -37px;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+}

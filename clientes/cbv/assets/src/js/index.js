@@ -110,7 +110,7 @@ $("document").ready(function(){
         navText:['<div class="seta-esq"></div>','<div class="seta-dir"></div>'],
     });
 
-    $(".menu-item").click(function(){
+    $(".menu-item").on('click', function(event) {
         $(this).parent().parent().find(".menu-item").each(function(){
             $(this).removeClass('ativo');
         });
@@ -141,17 +141,17 @@ $("document").ready(function(){
         });
     });
 
-    $(".seta-esq").click(function(){
+    $(".seta-esq").on('click', function(event) {
         $('.programa-1').animateCss('flipInX');
         $('.programa-2').animateCss('flipInX');
     });
 
-    $(".seta-dir").click(function(){
+    $(".seta-dir").on('click', function(event) {
         $('.programa-1').animateCss('flipInX');
         $('.programa-2').animateCss('flipInX');
     });
 
-    $(".select-drop-item").click(function(){
+    $(".select-drop-item").on('click', function(event) {
         $(this).closest(".select").find(".select-drop-title").html($(this).html());
         $(this).closest(".select").addClass('ativo');
 
@@ -159,20 +159,38 @@ $("document").ready(function(){
         $(selectId).val($(this).html()).change();
     });
 
-    $(".select-dropdown-btn").click(function(){
+    $(".select-drop-box").on('click', function(event) {
+        event.stopPropagation();
+
+        var checkbox = $(this).find('input[type="checkbox"]');
+        var checkmark = $(this).find('.checkmark');
+
+        if(checkbox.attr('checked'))
+        {
+            checkbox.removeAttr('checked');
+            checkmark.addClass('d-none');
+        }
+        else
+        {
+            checkbox.attr('checked','checked');
+            checkmark.removeClass('d-none');
+        }
+    });
+
+    $(".select-dropdown-btn").on('click', function(event) {
         $(this).toggleClass('open'); 
         $(this).closest(".select").toggleClass('focus');
     });
 
-    $(".open-btn").click(function(){
+    $(".open-btn").on('click', function(event) {
         $('.menu-mobile').addClass('ativo');
     });
 
-    $(".close-btn").click(function(){
+    $(".close-btn").on('click', function(event) {
         $('.menu-mobile').removeClass('ativo');
     });
 
-    $(".botao").click(function(){
+    $(".botao").on('click', function(event) {
         console.log($(this).attr('id'));
 
         if(!$(this).hasClass('ativo'))

@@ -510,7 +510,7 @@
                             </div>
                         </div>
                         <div class="campo">
-                            <label>Truno</label>
+                            <label>Turno</label>
                             <ul class="select" select="truno">
                                 <li class="select-dropdown-btn">
                                     <div class="select-seta">
@@ -545,59 +545,44 @@
                                         <span class="select-drop-title">Selecione a série</span>
                                     </div>
                                     <ul class="select-dropdown-content">
-                                        <li class="select-drop-item">Infantil 1</li>
-                                        <li class="select-drop-item">Infantil 2</li>
-                                        <li class="select-drop-item">Infantil 3</li>
-                                        <li class="select-drop-item">Infantil 4</li>
-                                        <li class="select-drop-item">Infantil 5</li>
-                                        <li class="select-drop-item">1ª Série</li>
-                                        <li class="select-drop-item">2ª Série</li>
-                                        <li class="select-drop-item">3ª Série</li>
-                                        <li class="select-drop-item">4ª Série</li>
-                                        <li class="select-drop-item">5ª Série</li>
-                                        <li class="select-drop-item">6ª Série</li>
-                                        <li class="select-drop-item">7ª Série</li>
-                                        <li class="select-drop-item">8ª Série</li>
-                                        <li class="select-drop-item">9ª Série</li>
-                                        <li class="select-drop-item">1ª Ano</li>
-                                        <li class="select-drop-item">2ª Ano</li>
-                                        <li class="select-drop-item">3ª Ano</li>
-                                        <li class="select-drop-item">Tiny Kids - Infantil 1 e 2</li>
-                                        <li class="select-drop-item">Tots - Infantil 3 e 4</li>
-                                        <li class="select-drop-item">Kinder - Infantil 5 e 1ª Série</li>
-                                        <li class="select-drop-item">Kids - 2ª e 3ª Série</li>
-                                        <li class="select-drop-item">Senior Kids - 4ª e 5ª Série</li>
-                                        <li class="select-drop-item">Pre-teens - 6ª Série</li>
-                                        <li class="select-drop-item">Teens - 7ª Série</li>
+                                        <li class="select-drop-box">
+                                            <input type="checkbox" />
+                                            <div class="check-box">
+                                                <div class="checkmark d-none"></div>
+                                            </div> 
+                                            Educação Infantil (Infantil 1 ao 5)
+                                        </li>
+                                        <li class="select-drop-box">
+                                            <input type="checkbox" />
+                                            <div class="check-box">
+                                                <div class="checkmark d-none"></div>
+                                            </div> 
+                                            Fundamental I (1º ao 5º ano)
+                                        </li>
+                                        <li class="select-drop-box">
+                                            <input type="checkbox" />
+                                            <div class="check-box">
+                                                <div class="checkmark d-none"></div>
+                                            </div> 
+                                        Fundamental II (6º ao 9º ano)
+                                        </li>
+                                        <li class="select-drop-box">
+                                            <input type="checkbox" />
+                                            <div class="check-box">
+                                                <div class="checkmark d-none"></div>
+                                            </div> 
+                                            Médio (1º ao 3º ano)
+                                        </li>
+                                        <li class="select-drop-box">
+                                            <input type="checkbox" />
+                                            <div class="check-box">
+                                                <div class="checkmark d-none"></div>
+                                            </div> 
+                                            Integral Bilíngue (Infantil 2 ao 7º ano)
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
-                            <select id="serie" name="serie">
-                                <option value="Infantil 1">Infantil 1</option>
-                                <option value="Infantil 2">Infantil 2</option>
-                                <option value="Infantil 3">Infantil 3</option>
-                                <option value="Infantil 4">Infantil 4</option>
-                                <option value="Infantil 5">Infantil 5</option>
-                                <option value="1ª Série">1ª Série</option>
-                                <option value="2ª Série">2ª Série</option>
-                                <option value="3ª Série">3ª Série</option>
-                                <option value="4ª Série">4ª Série</option>
-                                <option value="5ª Série">5ª Série</option>
-                                <option value="6ª Série">6ª Série</option>
-                                <option value="7ª Série">7ª Série</option>
-                                <option value="8ª Série">8ª Série</option>
-                                <option value="9ª Série">9ª Série</option>
-                                <option value="1ª Ano">1ª Ano</option>
-                                <option value="2ª Ano">2ª Ano</option>
-                                <option value="3ª Ano">3ª Ano</option>
-                                <option value="Tiny Kids - Infantil 1 e 2">Tiny Kids - Infantil 1 e 2</option>
-                                <option value="Tots - Infantil 3 e 4">Tots - Infantil 3 e 4</option>
-                                <option value="Kinder - Infantil 5 e 1ª Série">Kinder - Infantil 5 e 1ª Série</option>
-                                <option value="Kids - 2ª e 3ª Série">Kids - 2ª e 3ª Série</option>
-                                <option value="Senior Kids - 4ª e 5ª Série">Senior Kids - 4ª e 5ª Série</option>
-                                <option value="Pre-teens - 6ª Série">Pre-teens - 6ª Série</option>
-                                <option value="Teens - 7ª Série">Teens - 7ª Série</option>
-                            </select>
                         </div>
                         <div class="campo">
                             <label>Unidade</label>
@@ -609,12 +594,14 @@
                                     <ul class="select-dropdown-content">
                                         <li class="select-drop-item">Boa Viagem</li>
                                         <li class="select-drop-item">Jaqueira</li>
+                                        <li class="select-drop-item">Natal</li>
                                     </ul>
                                 </li>
                             </ul>
                             <select id="unidade" name="unidade">
                                 <option value="Boa Viagem">Boa Viagem</option>
                                 <option value="Jaqueira">Jaqueira</option>
+                                <option value="Natal">Natal</option>
                             </select>
                         </div>
                     </div>

@@ -7,7 +7,7 @@
     @include media-breakpoint-down(sm) {
         padding-top: 35px;
 
-        label{
+        label {
             font-size: 14px;
         }
     }
@@ -21,7 +21,7 @@
         text-align: center;
     }
 
-        h2{
+    h2 {
         margin-bottom: 15px;
     }
 
@@ -143,10 +143,38 @@
                 border-top: none;
 
                 li {
-                    padding-top: 5px;
+                    padding-top: 10px;
+                    cursor: pointer;
 
                     &:hover {
                         background: #e5e5e5;
+                    }
+                }
+
+                .select-drop-box {
+                    input {
+                        display: none;
+                    }
+
+                    .check-box {
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #707070;
+                        display: inline-block;
+                        vertical-align: text-top;
+                        margin-top: 1px;
+                        position: relative;
+
+                        .checkmark {
+                            margin-left: 4px;
+                            width: 5px;
+                            height: 10px;
+                            border: solid #707070;
+                            border-width: 0 3px 3px 0;
+                            -webkit-transform: rotate(45deg);
+                            -ms-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
                     }
                 }
             }

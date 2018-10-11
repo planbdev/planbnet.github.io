@@ -113,6 +113,13 @@
         .select-dropdown-btn {
             position: relative;
 
+            .select-drop-title{
+                max-width: 75%;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
             .select-seta {
                 padding: 10px 0;
                 cursor: pointer;

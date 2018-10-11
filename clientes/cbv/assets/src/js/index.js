@@ -69,6 +69,8 @@ $("document").ready(function(){
         autoplay: false,
         animateOut: false,
         animateIn: false,
+        mouseDrag: false,
+        touchDrag: false,
         items:5,
         navText:['<div class="seta-esq"></div>','<div class="seta-dir"></div>'],
         responsive : {
@@ -98,18 +100,6 @@ $("document").ready(function(){
         }
     });
     
-    $('.carrossel-programas').owlCarousel({
-        nav:true,
-        loop:true,
-        dots: false,
-        autoplay: false,
-        animateOut: 'flipInX',
-        animateIn: 'flipInX',
-        items:1,
-        smartSpeed:450,
-        navText:['<div class="seta-esq"></div>','<div class="seta-dir"></div>'],
-    });
-
     $(".menu-item").on('click', function(event) {
         $(this).parent().parent().find(".menu-item").each(function(){
             $(this).removeClass('ativo');
@@ -159,21 +149,51 @@ $("document").ready(function(){
         $(selectId).val($(this).html()).change();
     });
 
+    $(".check-ensino").on('click', function(event) {
+
+        var id = '#' + $(this).attr('checkId');
+        var checkbox = $(id).find('input[type="checkbox"]');
+        var checkmark = $(id).find('.checkmark');
+        var texto = $(this).closest(".select").find(".select-drop-title").html();
+        texto = texto.replace('Selecione a etapa de ensino', '');
+
+        checkbox.attr('checked','checked');
+        checkmark.removeClass('d-none');
+        texto = texto + " " + $(id).find('span').html();
+        $(id).closest(".select").find(".select-drop-title").html(texto);
+        $(this).closest(".select").addClass('ativo');
+    });
+
     $(".select-drop-box").on('click', function(event) {
         event.stopPropagation();
 
         var checkbox = $(this).find('input[type="checkbox"]');
         var checkmark = $(this).find('.checkmark');
+        var texto = $(this).closest(".select").find(".select-drop-title").html();
 
         if(checkbox.attr('checked'))
         {
             checkbox.removeAttr('checked');
             checkmark.addClass('d-none');
+
+            texto = texto.replace(" " + $(this).find('span').html(), '');
+
+            if(texto.length < 5 )
+            {
+                $(this).closest(".select").removeClass('ativo');
+                texto = 'Selecione a etapa de ensino';
+            }
+
+            $(this).closest(".select").find(".select-drop-title").html(texto);
         }
         else
         {
+            texto = texto.replace('Selecione a etapa de ensino', '');
             checkbox.attr('checked','checked');
             checkmark.removeClass('d-none');
+            texto = texto + " " + $(this).find('span').html();
+            $(this).closest(".select").find(".select-drop-title").html(texto);
+            $(this).closest(".select").addClass('ativo');
         }
     });
 

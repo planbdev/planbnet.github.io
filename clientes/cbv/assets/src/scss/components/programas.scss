@@ -1,7 +1,20 @@
 ﻿.programas {
-    background: #198338;
+    background: linear-gradient(to bottom, rgba(25,131,56,1) 0%,rgba(16,101,41,1) 100%);
     padding-top: 70px;
     position: relative;
+    overflow: hidden;
+
+    &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 140%;
+        height: 190px;
+        background: #e5e5e5;
+        transform: rotate(-2deg) translateX(-50%);
+        z-index: 0;
+    }
 
     @include media-breakpoint-down(sm) {
         padding-top: 35px;
@@ -13,6 +26,10 @@
         }
     }
 
+    & > .container{
+        z-index: 2;
+    }
+
     .introducao {
         h2, p {
             color: #fff;
@@ -22,7 +39,7 @@
 
     .botoes {
         position: absolute;
-        top: 62%;
+        top: 55%;
 
         .seta-esq, .seta-dir {
             width: 50px;

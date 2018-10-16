@@ -174,11 +174,12 @@ h3 {
 
 .cta {
     background-image: linear-gradient(to right, #ed4300, #ff8400);
-    box-shadow: rgba(0,0,0,0.5) 0px 10px 25px;
+    box-shadow: rgba(0,0,0,0.4) 0px 8px 21px;
     border-radius: 15px;
     padding: 9px 25px;
     margin-top: 15px;
-    transition: background-image 0.5s;
+    transition: all 0.2s linear;
+    transform: scale(1);
     height: 45px;
     display: inline-block;
 
@@ -188,11 +189,12 @@ h3 {
         font-size: 18px;
         text-align: center;
         text-transform: uppercase;
+        white-space: nowrap;
     }
 
     &:hover{
-        box-shadow: none !important;
-        background-image: linear-gradient(to right, #ff8400, #ed4300);
+        box-shadow: rgba(0,0,0,0.5) 0px 10px 25px;
+        transform: scale(1.05);
     }
 
     @include media-breakpoint-down(md) {

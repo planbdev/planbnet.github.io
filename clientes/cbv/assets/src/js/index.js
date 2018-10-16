@@ -8,6 +8,7 @@ import '../../node_modules/@fancyapps/fancybox';
 import '../../node_modules/bootstrap-datepicker';
 import '../js/featherlight.js';
 import '../js/featherlight.gallery.js';
+import '../js/maskinput.js';
 
 $("document").ready(function(){
     var wow = new WOW(
@@ -53,7 +54,7 @@ $("document").ready(function(){
     };
 
     $(window).scroll(function(event){
-        var current = $(this).scrollTop();		
+        var current = $(this).scrollTop();      
         if (current > 100){
             $('header').addClass('reduzido');
         }
@@ -260,6 +261,20 @@ $("document").ready(function(){
         }, 400); // Match CSS transition time
     });
 
+    // MASCARA CAMPO DE TELEFONE
+    (function(){ 
+        var TEL_FIELD = $('.campo-telefone');
+        var TEL_MASK = function(val){
+            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+        },
+        TEL_OPTIONS = {
+            onKeyPress: function(val, e, field, options) {
+                field.mask(TEL_MASK.apply({}, arguments), options);
+            }
+        };
+        TEL_FIELD.mask(TEL_MASK, TEL_OPTIONS);
+    })();
+
     $('img.svg').each(function(){
         var $img = $(this);
         var imgID = $img.attr('id');
@@ -328,6 +343,7 @@ $("document").ready(function(){
         }, 'xml');
 
     });
+
 });
 
 let $stackedCards = $('.stacked-cards');

@@ -9,9 +9,10 @@ $maxCards: 10;
     min-height: 240px;
 	max-height: 800px;
 	padding: 1em 2em;
-	box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.16);
+	/*box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.16);*/
+	border: 1px solid rgba(0,0,0,.05);
 	width: 100%;
-    height: 100%;
+    height: 280px;
 	transform-origin: 50% 0;
 	transform: perspective(100px) translateY(75px) scale(.9) rotateX(-10deg);
 	opacity: 0;
@@ -26,7 +27,8 @@ $maxCards: 10;
 	@for $i from 1 through $maxCards {
 		&:nth-last-of-type(#{$i + 1}) {
 			transform: translate3d(0, #{-$i * 20px}, #{-$i * 32px});
-			opacity: #{1 - (($i - 1) * .15)};
+			/*opacity: #{1 - (($i - 1) * .15)};*/
+			opacity: #{1 - ($i * .1)}; 
 		}
 	}
 
@@ -46,7 +48,7 @@ $maxCards: 10;
 }
 
 .stacked-cards {
-    height: 350px;
+    height: 310px;
 	margin-bottom: 120px; 
 	perspective: 1000px;
 	position: relative;

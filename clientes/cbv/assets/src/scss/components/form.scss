@@ -40,6 +40,12 @@
         font-weight: 600;
         text-transform: uppercase;
         padding: 10px 20px;
+        cursor: pointer;
+        transition: color .2s linear;
+        
+        &:hover{
+            background: #fd7419;
+        }
     }
 
     input[type="text"] {

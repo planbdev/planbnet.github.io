@@ -19,10 +19,10 @@
     @include media-breakpoint-down(sm) {
         padding-top: 35px;
         .stacked-cards {
-    height: 300px;
-        .card{
-            padding: 5px 10px;
-        }
+            height: 370px;
+            .card{
+                padding: 5px 10px;
+            }
         }
     }
 

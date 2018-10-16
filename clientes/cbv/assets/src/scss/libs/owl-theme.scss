@@ -57,9 +57,12 @@
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
   zoom: 1;
-  *display: inline; }
+  *display: inline;
+  outline: 0;
+}
 
 .owl-theme .owl-dots .owl-dot span {
+  outline: 0;
   width: 25px;
   height: 25px;
   margin: 5px;
@@ -70,7 +73,6 @@
   background-position: center;
 }
 .owl-theme .owl-dots .owl-dot.active span{
-  
   width: 25px;
   height: 25px;
   margin: 5px;

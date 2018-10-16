@@ -8,15 +8,22 @@
         font-size: 16px;
         margin: 10px auto;
         text-align: center;
+        max-width: 75%;
 
         @include media-breakpoint-down(sm) {
             font-size: 12px;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 
     .planB-logo{
         float: right;
         margin-top: -37px;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: -48px;
+        }
 
         &:hover{
             color: #fff;

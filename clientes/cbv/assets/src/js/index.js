@@ -199,8 +199,17 @@ $("document").ready(function(){
     });
 
     $(".select-dropdown-btn").on('click', function(event) {
-        $(this).toggleClass('open'); 
-        $(this).closest(".select").toggleClass('focus');
+        if($(this).hasClass('open')){
+            $(".select-dropdown-btn").removeClass('open');
+        }else{
+            $(".select-dropdown-btn").removeClass('open');
+            $(this).addClass('open');
+            $(this).closest(".select").toggleClass('focus');
+        }
+    });
+
+    $(".campo input[type=text]").on('focus', function(event) {
+        $(".select-dropdown-btn").removeClass('open');
     });
 
     $(".open-btn").on('click', function(event) {

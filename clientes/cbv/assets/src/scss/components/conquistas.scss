@@ -27,15 +27,18 @@
 
     .blocos{
         background: no-repeat center url(../img/banners/conquistas-bg.svg);
-        background-size: 80%;
+        background-size: 80% auto;
         display: flex;
         height: 400px;
         margin: auto;
         width: 100%;
 
-        @include media-breakpoint-down(md) {
-            display: flex;
+        @include media-breakpoint-down(lg) {
+            background-size: 90% auto;
+        }
 
+        @include media-breakpoint-down(md) {
+            background-size: 74% auto;
             .bloco {
                 transform: scale(0.7);
                 margin-left: -15px;
@@ -81,6 +84,10 @@
             padding: 20px 21px 20px;
             display: flex;
 
+            @include media-breakpoint-down(sm) {
+                padding:20px 14px;
+            }
+
             .conteudo{
                 vertical-align: middle;
                 margin: auto;
@@ -95,6 +102,10 @@
                 margin: 0;
                 font-size: 16px;
                 color: #fff;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 17px;
+                }
             }
 
             .icone {

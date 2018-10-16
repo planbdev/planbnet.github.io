@@ -38,7 +38,11 @@
                width: 83%;
                 padding-top: 25px;
                 height: 280px;
-               }
+                padding-right: 28px;
+                p{
+                    font-size: 15px;   
+                }
+            }
 
            .cta{
                bottom: 50px;
@@ -48,7 +52,7 @@
         @include media-breakpoint-down(sm) {
             .corpo {
                 width: 78%;
-                padding-top: 35px;
+                padding-top: 18px;
                 margin-left: 12%;
                }
             }

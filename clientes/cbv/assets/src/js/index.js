@@ -77,22 +77,17 @@ $("document").ready(function(){
         responsive : {
             0 : {
                 items:1,
-                dots:true,
+                nav:true,
             },
 
-            450 : {
+            768 : {
                 items:2,
-                dots:true,
+                nav:true,
             },
 
-            700 : {
+            991 : {
                 items:3,
-                dots:true,
-            },
-
-            970 : {
-                items:4,
-                dots:true,
+                nav:true,
             },
 
             1180 : {
@@ -216,7 +211,7 @@ $("document").ready(function(){
         $('.menu-mobile').addClass('ativo');
     });
 
-    $(".close-btn").on('click', function(event) {
+    $(".close-btn, .menu-mobile .bg").on('click', function(event) {
         $('.menu-mobile').removeClass('ativo');
     });
 

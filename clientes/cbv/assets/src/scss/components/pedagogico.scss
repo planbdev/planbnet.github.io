@@ -7,6 +7,7 @@
 
     @include media-breakpoint-down(sm) {
         padding-top: 35px;
+        padding-bottom: 50px;
     }
 
     .introducao{
@@ -17,7 +18,7 @@
     }
 
     .bloco {
-        width: 100%;
+        width: 222px;
         height: 350px;
         display: inline-block;
         margin-top: 25px;
@@ -50,26 +51,29 @@
         }
 
         @include media-breakpoint-down(sm) {
+
+            width: 252px;
+
             .corpo {
                 width: 78%;
                 padding-top: 18px;
                 margin-left: 12%;
-               }
             }
-                @include media-breakpoint-down(xs) {
-                        height: 320px;
-                        .broda{
-                            height: 276px;
-                        }
-                    .corpo{
-                        width: 63%;
-                        margin-left: auto;
-                    }
-                .cta{
-                    max-width: 200px;
-                    bottom: 28px;
-                }
+        }
+
+         @include media-breakpoint-down(xs) {
+            height: 320px;
+            .broda{
+                height: 276px;
             }
+            .corpo{
+                margin-left: auto;
+            }
+            .cta{
+                max-width: 200px;
+                bottom: 28px;
+            }
+        }
 
         .cta{
             background-image: linear-gradient(to right, #ed4300, #ff8400);
@@ -134,4 +138,30 @@
             }
         }
     }
+
+    .carrossel-pedagogico{
+        @include media-breakpoint-down(lg) {
+            padding: 0 30px;
+        }
+    }
+
+    .owl-carousel .owl-item{
+        text-align: center;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]{
+        @include media-breakpoint-down(sm) {
+            top: 47%;
+            right: -10px;
+        }
+    }
+
+    .owl-theme .owl-nav [class*=owl-].owl-prev{
+        @include media-breakpoint-down(sm) {
+            left: -10px;            
+        }
+    }
+
+
+    
 }

@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
 
-    &:before{
+    &:before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -18,15 +18,17 @@
 
     @include media-breakpoint-down(sm) {
         padding-top: 35px;
+
         .stacked-cards {
             height: 370px;
-            .card{
+
+            .card {
                 padding: 5px 10px;
             }
         }
     }
 
-    & > .container{
+    & > .container {
         z-index: 2;
     }
 
@@ -98,17 +100,19 @@
             }
         }
 
-        .icos{
-             margin: auto;
+        .icos {
+            margin: auto;
             display: table;
-            
+
             img {
                 height: 75px;
                 width: auto;
+                padding-top: 10px;
 
                 @include media-breakpoint-down(lg) {
                     height: 65px;
                 }
+
                 @include media-breakpoint-down(sm) {
                     height: 50px;
                 }
@@ -142,9 +146,9 @@
 
                 .arrow-scroll-down {
                     padding-top: 25px;
-                    }
+                }
 
-                .arrow-down{
+                .arrow-down {
                     border-top: 1px solid #fb7600;
                     border-right: 1px solid #fb7600;
                 }

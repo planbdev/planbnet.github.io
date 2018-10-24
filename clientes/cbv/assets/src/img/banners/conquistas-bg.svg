@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 884 337" style="enable-background:new 0 0 884 337;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#Retângulo_Arredondado_3_1_);stroke-width:2;stroke-linecap:round;stroke-dasharray:1.000000e-03,4;}
+</style>
+<linearGradient id="Retângulo_Arredondado_3_1_" gradientUnits="userSpaceOnUse" x1="962" y1="-2707" x2="962" y2="-2372" gradientTransform="matrix(1 0 0 -1 -520 -2371)">
+	<stop  offset="0" style="stop-color:#198338"/>
+	<stop  offset="1" style="stop-color:#0C5E24"/>
+</linearGradient>
+<path id="Retângulo_Arredondado_3" class="st0" d="M773,336H111c-5.5,0-10-4.5-10-10V11c0-5.5,4.5-10,10-10h185c5.5,0,10,4.5,10,10
+	v125c0,5.5,4.5,10,10,10h252c5.5,0,10-4.5,10-10V11c0-5.5,4.5-10,10-10h185c5.5,0,10,4.5,10,10v315C783,331.5,778.5,336,773,336z"/>
+</svg>

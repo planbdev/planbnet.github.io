@@ -83,11 +83,11 @@
         <nav class="header__menu-main">
             <ul>
                 <li tabindex="0">
-                    <a href="#" class="active">Quem Somos</a>
+                    <a href="#">Quem Somos</a>
                     <div>
                         <a href="#">Grupo Keralty</a>
                         <a href="#">Perguntas Frequentes</a>
-                        <a href="#" class="active">Fale Conosco</a>
+                        <a href="#">Fale Conosco</a>
                         <a href="#">Ouvidoria</a>
                         <a href="#" target="_blank">Trabalhe Conosco</a>
                     </div>
@@ -105,14 +105,14 @@
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#">Unidades</a>
+                    <a href="#" class="active">Unidades</a>
                     <div>
                         <a href="#">Hospital Keralty</a>
                         <a href="#">Keralty Centro Médico - Centro</a>
                         <a href="#">Keralty Centro Médico - Contagem</a>
                         <a href="#">Keralty Centro Médico - Venda Nova</a>
                         <a href="#">Keralty Centro Médico - Montes Claros</a>
-                        <a href="#">Atendimento Presencial</a>
+                        <a href="#" class="active">Atendimento Presencial</a>
                         <a href="#">Keralty Laboratório</a>
                     </div>
                 </li>
@@ -301,9 +301,9 @@
 
 <main class="main">
 
-    <section class="hero-page" style="background-image:url(../dist/images/img-top-quemsomos.jpg);">
+    <section class="hero-page" style="background-image:url(../dist/images/img-top-atendimento-presencial.jpg);">
         <div class="container">
-            <h1 class="hero-page-title">Fale Conosco</h1>
+            <h1 class="hero-page-title">Atendimento Presencial</h1>
         </div>
     </section>
 
@@ -311,122 +311,222 @@
         <div class="container">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><i>/</i><span>Fale Conosco</span></li>
+                <li><i>/</i><a href="#">Unidades</a></li>
+                <li><i>/</i><span>Atendimento Presencial</span></li>
             </ul>
         </div>
     </div>
 
+    <section class="section-ratio-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="title">Mais agilidade para seus atendimentos</h2>
+                    <p class="text">Para resolver suas demandas presencialmente e diretamente com nossos atendentes, a Vitallis disponibiliza postos de atendimentos localizados em todo o Brasil. Para agilizar o atendimento, é importante, que você esteja portando o pedido médico, exames anteriores, cartão do beneficiário e documento de identidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="map-postos" id="map_postos"></div>
+        <script type="text/javascript">
+            var MAP_LOCATIONS = [
+
+                ['<div class="map-info"><h3>São Paulo/SP</h3><p><small>Rua Boa Vista, 254 - 11º andar - Centro - São Paulo / SP  - CEP: 01014-000</small></p><p>(11) 5056-8495</p></div>', -23.5454414, -46.6334611, 1],
+
+                ['<div class="map-info"><h3>Governador Valadares/MG</h3><p><small>Rua Barão do Rio Branco, nº 461, sala 703 - Bairro: Centro - CEP: 35010-030</small></p><p>(33) 3221-5581 | (33) 3082-3101</p></div>', -18.8533993, -41.9456377, 2],
+        
+                ['<div class="map-info"><h3>Coronel Fabriciano/MG</h3><p><small>Rua Zacarias Roque, nº 45 - Bairro: Centro / Cep: 35.170.025</small></p><p>(31) 3841-5029 | (31) 3842-7240</p></div>', -19.5289571, -42.6238944, 3],
+
+                ['<div class="map-info"><h3>Caratinga/MG</h3><p><small>Trav. Margarida Teixeira, nº 23 - Bairro: Centro / Cep: 35.300-023</small></p><p>(33) 3321-4563</p></div>', -19.788998, -42.143679, 4],
+
+                ['<div class="map-info"><h3>Cachoeiro de Itapemirim/ES</h3><p><small>Praça Jerônimo Monteiro, nº 19 - Bairro: Centro - CEP: 29.300-170</small></p><p>(28) 3515-0867</p></div>', -20.8467047, -41.1202199, 5],
+
+                ['<div class="map-info"><h3>Conselheiro Lafaiete/MG</h3><p><small>Av. Telésforo Cândido de Resende, nº 550, Sala: 506 - Bairro: Centro / Cep: 36.400-00</small></p><p>(31) 3761-5647</p></div>', -20.6590581, -43.7885113, 6],
+
+                ['<div class="map-info"><h3>Rio Verde/GO</h3><p><small>Rua Onze, Quadra 05, Lote 05 - Bairro: Residencial Recanto dos Bosques - CEP 75912-001</small></p><p>(64) 3622-1276</p></div>', -17.8163783, -50.9347615, 7],
+
+                ['<div class="map-info"><h3>Feira de Santana/BA</h3><p><small>Av. Getulio Vargas, 854, Centro - Edifício Medical Service - 4º andar - Sala 407 - CEP: 44001-496</small></p><p>(75) 3223-4774</p></div>', -12.2551981, -38.9569687, 8],
+
+                ['<div class="map-info"><h3>São Luiz/MA</h3><p><small>Av. Jerônimo de Albuquerque 1001, Sala 11 | Centro Comercial Belo Center - Bairro: Bequimão - CEP 650560-641</small></p><p>(98) 3304-5529 | (98) 3302-3862</p></div>', -2.5265411, -44.2407377, 9]
+
+            ];
+        </script>
+    </section>
+
     <section class="section-ratio-7">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h2 class="title">Entre em Contato</h2>
+                <div class="col-12 text-center">
+                    <h2 class="title">Onde estamos</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form">
-                        <form action="" name="">
-                            <div class="row">
-                                <div class="col-12 col-xl-8">
-                                    <div class="row">
-                                        <div class="col-12 col-md-6 mt-2">
-                                            <label for="nome">Nome <i>&#42;</i></label>
-                                            <input type="text" class="" id="nome" required>
-                                        </div>
-                                        <div class="col-12 col-md-6 mt-2">
-                                            <label for="email">E-mail <i>&#42;</i></label>
-                                            <input type="email" class="" id="email" required>
-                                        </div>
-                                        <div class="col-12 col-md-6 mt-2">
-                                            <label for="telefone">Telefone</label>
-                                            <input type="tel" class="" id="telefone">
-                                        </div>
-                                        <div class="col-12 col-md-6 mt-2">
-                                            <label for="assunto">Assunto</label>
-                                            <select class="" id="assunto">
-                                                <option selected>Selecione o assunto</option>
-                                                <option value="1">Dúvidas e Sugestões</option>
-                                                <option value="2">Reclamações</option>
-                                                <option value="3">Outros assuntos</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-12 col-md-6 mt-2">
-                                            <label for="assunto">Setor <i>&#42;</i></label>
-                                            <select class="" id="assunto">
-                                                <option selected>Selecione o setor</option>
-                                                <option value="1">Ouvidoria</option>
-                                                <option value="2">Call Center</option>
-                                                <option value="3">Lavanderia</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-4 mt-2">
-                                    <label for="mensagem">Mensagem <i>&#42;</i></label>
-                                    <textarea name="mensagem" id="mensagem"></textarea>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn-tp-form btn-cl-1 btn-pd-1 mt-3 ml-sm-auto" type="submit">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
+            <div class="row mt-2">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ratio-7 section-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="title">Telefones Úteis</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-5 mt-2">
-                    <div class="info">
-                        <h2><i class="icon icon-phone"></i>Sac Vitallis</h2>
-                        <div class="info-detail mt-1">
-                            <p>Belo Horizonte e Região Metropolitana</p>
-                            <span>(31) 3014 3002</span>
-                        </div>
-                        <div class="info-detail mt-1">
-                            <p>Demais Cidades Brasileiras</p>
-                            <span>0800 701 3802</span>
-                        </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5 mt-2">
-                    <div class="info">
-                        <h2><i class="icon icon-phone"></i>Sac Vitallis São Paulo</h2>
-                        <div class="info-detail mt-1">
-                            <p>São Paulo e Região Metropolitana</p>
-                            <span>(11) 5095 1414</span>
-                        </div>
-                        <div class="info-detail mt-1">
-                            <p>Outras Regiões</p>
-                            <span>0800 774 1400</span>
-                        </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ratio-7 section-unidades">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-7">
-                    <img src="images/img-atendimento-presencial.jpg">
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
                 </div>
-                <div class="col-12 col-md-5 mt-4 mt-md-0 order-md-first">
-                    <h2 class="title">Atendimento Presencial</h2>
-                    <p class="text">Nós, da Vitallis, prezamos pelo conforto e bem-estar dos nossos clientes e por isso, oferecemos em Belo Horizonte e em Montes Claros os <strong>Centros Médicos e Hospital próprio Keralty</strong>, com serviços de assistência médica diversificados, que possuem atendimento profissional de excelência e estimulam o cuidado ativo da saúde.</p> 
-                    <a href="#" class="btn-tp-1 btn-cl-3 btn-pd-3">Confira os endereços</a>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="#" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-lg-4">
+                    <div class="board">
+                        <h3>Belo Horizonte <small>Minas Gerais</small></h3>
+                        <address>
+                            <p>Avenida Bernardo Monteiro, 735</p>
+                            <p>Térreo – Ed. Marly Viana
+                            <p>Área Hospitalar</p>
+                        </address>
+                        <time><i class="icon icon-calendar"></i> Seg a qui - 8 às 18h</time>
+                        <span>
+                            <span><i class="icon icon-phone"></i> 31 3333 3333</span>
+                            <a href="https://www.google.com.br/maps/place/Atendimento+Pessoal+Vitallis+Sanitas/@-19.925031,-43.927572,15z/data=!4m5!3m4!1s0x0:0x6d72769c2ddaad38!8m2!3d-19.925031!4d-43.927572" target="_blank"><i class="icon icon-location"></i> <strong>Ver localização</strong></a>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -587,5 +687,142 @@
         </div>
     </div>
 </footer>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGR7RXictjtuAmEAvVuTqOo7wq6YmTJAE&callback=MAP_INIT"></script>
+<script async>
+    // MAPS API
+    var MAP_INIT = function(){
+        const MAP_POSTOS = document.getElementById('map_postos');
+        const MAP_API = new google.maps.Map(MAP_POSTOS,{
+            center: {lat:-12.492854,lng:-45.889281},
+            zoom: 5,
+            styles: [
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#444444"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#dadada"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 45
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#fafafa"
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                }
+            ]
+        });
+        setMarkers(MAP_API);
+    }
+
+    function setMarkers(map){
+
+        var IMAGE = {
+            url: '../dist/images/icon-pin.png',
+            size: new google.maps.Size(54, 61),
+            origin: new google.maps.Point(0, 0),
+            anchor: new google.maps.Point(27, 61)
+        };
+
+        var SHAPE = {
+            coords: [1, 1, 1, 70, 122, 70, 122, 1],
+            type: 'poly'
+        };
+
+        var INFO_WINDOW = new google.maps.InfoWindow();
+
+        google.maps.event.addListener(map, 'click', function(){
+            INFO_WINDOW.close();
+        });
+
+        var markers = [];
+
+        for (var i = 0; i < MAP_LOCATIONS.length; i++) {
+            var LOCATION = MAP_LOCATIONS[i];
+            var MARKER = new google.maps.Marker({
+                position: {lat: LOCATION[1], lng: LOCATION[2]},
+                map: map,
+                icon: IMAGE,
+                shape: SHAPE,
+                title: 'Clique e veja',
+                zIndex: LOCATION[3]
+            });
+
+            google.maps.event.addListener(MARKER, 'click', (function(MARKER, i){
+                return function() {
+                    INFO_WINDOW.setContent(MAP_LOCATIONS[i][0]);
+                    INFO_WINDOW.open(map, MARKER);
+                }
+            })(MARKER, i));
+
+            markers.push(MARKER);
+        }
+    }
+</script>
 <script type="text/javascript" src="app.js"></script><script type="text/javascript" src="main.js"></script><script type="text/javascript" src="blog.js"></script></body>
 </html>

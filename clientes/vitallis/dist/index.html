@@ -9,8 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
-    <link href="main.css" rel="stylesheet">
-</head>
+<link href="main.css" rel="stylesheet"><link href="blog.css" rel="stylesheet"></head>
 <body>
 
 <nav class="access" role=”navigation”>
@@ -50,9 +49,6 @@
                                         <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
                                         <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
                                     </form>
-                                    <button id="" class="js-close-search access__aside-close" aria-label="Fechar Busca" title="Sair da Busca">
-                                        <span class="sr-only">Sair da Busca</span>
-                                    </button>
                                     <div class="access__suggest">
                                         <h3 class="subtitle"><span>Links rápidos</span></h3>
                                         <nav>
@@ -64,6 +60,9 @@
                                         </nav>
                                     </div>
                                 </div>
+                                <button id="" class="js-close-search access__aside-off" aria-label="Fechar Busca" title="Sair da Busca">
+                                    <span class="sr-only">Sair da Busca</span>
+                                </button>
                             </div>
                         </aside>
                     </nav>
@@ -86,16 +85,18 @@
                 <li tabindex="0">
                     <a href="#">Quem Somos</a>
                     <div>
-                        <a href="#">Fale Conosco</a>
-                        <a href="#">Perguntas Frequentes</a>
                         <a href="#">Grupo Keralty</a>
+                        <a href="#">Perguntas Frequentes</a>
+                        <a href="#">Fale Conosco</a>
+                        <a href="#">Ouvidoria</a>
+                        <a href="#" target="_blank">Trabalhe Conosco</a>
                     </div>
                 </li>
                 <li tabindex="0">
                     <a href="#">Planos</a>
                     <div>
                         <a href="#">Individual Familiar</a>
-                        <a href="#">Vitalidade</a>
+                        <a href="#">Vitallidade</a>
                         <a href="#">Plus</a>
                         <a href="#">Empresarial</a>
                         <a href="#">Coletivo por Adesão</a>
@@ -111,12 +112,15 @@
                         <a href="#">Keralty Centro Médico - Contagem</a>
                         <a href="#">Keralty Centro Médico - Venda Nova</a>
                         <a href="#">Keralty Centro Médico - Montes Claros</a>
-                        <a href="#">Postos de Atendimento</a>
+                        <a href="#">Atendimento Presencial</a>
                         <a href="#">Keralty Laboratório</a>
                     </div>
                 </li>
                 <li tabindex="0">
                     <a href="#">Procedimentos</a>
+                    <div>
+                        <a href="#">Solicitar Autorização de Procedimento</a>
+                    </div>
                 </li>
                 <li tabindex="0">
                     <a href="#">Programas de Saúde</a>
@@ -177,10 +181,11 @@
                             <li tabindex="0">
                                 <a href="#">Quem Somos</a><input type="checkbox">
                                 <div>
-                                    <a href="#">Fale Conosco</a>
-                                    <a href="#">Perguntas Frequentes</a>
                                     <a href="#">Grupo Keralty</a>
-                                    <a href="#">Trabalhe Conosco</a>
+                                    <a href="#">Perguntas Frequentes</a>
+                                    <a href="#">Fale Conosco</a>
+                                    <a href="#">Ouvidoria</a>
+                                    <a href="#" target="_blank">Trabalhe Conosco</a>
                                 </div>
                             </li>
                             <li tabindex="0">
@@ -203,12 +208,15 @@
                                     <a href="#">Keralty Centro Médico - Contagem</a>
                                     <a href="#">Keralty Centro Médico - Venda Nova</a>
                                     <a href="#">Keralty Centro Médico - Montes Claros</a>
-                                    <a href="#">Postos de Atendimento</a>
+                                    <a href="#">Atendimento Presencial</a>
                                     <a href="#">Keralty Laboratório</a>
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Procedimentos</a>
+                                <a href="#">Procedimentos</a><input type="checkbox">
+                                <div>
+                                    <a href="#">Solicitar Autorização de Procedimento</a>
+                                </div>
                             </li>
                             <li tabindex="0">
                                 <a href="#">Programas de Saúde</a><input type="checkbox">
@@ -287,6 +295,9 @@
             <li>
                 <a href="#"><span>Solicitar Autorização</span></a>
             </li>
+            <li>
+                <a href="#"><span>Boletos</span></a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -304,8 +315,8 @@
                                 <div class="col-10 col-md-8 col-lg-7 offset-1">
                                     <h2 class="hero-home-title">Lorem ipsum dolor sit amet cati insectur</h2>
                                     <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua dolor sit amet, consectetur adipisicing.</p>
-                                    <a href="#" class="btn-tp-1 btn-cl-2 btn-pd-1 btn-tr">Lorem ipsum dolor</a>
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <a href="#" class="btn-tp-1 btn-cl-2 btn-pd-1 btn-tr">Conheça nossas unidades</a>
                                 </div>
                             </div>
                         </div>
@@ -777,17 +788,15 @@
                 </div>
             </div>
         </div>
-
-
         <div class="d-flex flex-wrap flex-xl-nowrap justify-content-xl-between row-middle">
             <div class="flex-xl-fill">
                 <nav class="mt-2">
                     <h2><a href="#">Quem Somos</a></h2>
                     <ul>
-                        <li><a href="#">Fale Conosco</a></li>
-                        <li><a href="#">Perguntas Frequentes</a></li>
                         <li><a href="#">Grupo Keralty</a></li>
-                        <li><a href="#">Ouvidoria</a></li>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Ouvidoria</a></li> 
                         <li><a href="#">Trabalhe Conosco</a></li> 
                     </ul>
                 </nav>
@@ -795,7 +804,7 @@
                     <h2><a href="#">Nossos Planos</a></h2>
                     <ul>
                         <li><a href="#">Individual Familiar</a></li>
-                        <li><a href="#">Vitalidade</a></li>
+                        <li><a href="#">Vitallidade</a></li>
                         <li><a href="#">Empresarial</a></li>
                         <li><a href="#">Coletivo por Adesão</a></li>
                         <li><a href="#">Sanitas Exclusivo</a></li>
@@ -824,19 +833,18 @@
             </div>
             <div class="flex-xl-fill">
                 <nav class="mt-2">
-                    <h2><a href="#">Unidades Médicas</a></h2>
+                    <h2><a href="#">Unidades</a></h2>
                     <ul>
                         <li><a href="#">Hospital Keralty</a></li>
                         <li><a href="#">Keralty Centro Médico - Centro</a></li>
                         <li><a href="#">Keralty Centro Médico - Contagem</a></li>
                         <li><a href="#">Keralty Centro Médico - Venda Nova</a></li>
                         <li><a href="#">Keralty Centro Médico - Montes Claros</a></li>
-                        <li><a href="#">Postos de Atendimento</a></li>
+                        <li><a href="#">Atendimento Presencial</a></li>
                         <li><a href="#">Keralty Laboratório</a></li>
                     </ul>
                 </nav>
                 <nav class="mt-2">
-                    <h2><a href="#">Primeiro Acesso</a></h2>
                     <h2><a href="#">Guia Médico</a></h2>
                     <h2><a href="#">Marcar Consulta</a></h2>
                 </nav>
@@ -852,9 +860,9 @@
                             <h2><a href="#">Releases</a></h2>
                         </div>
                         <div class="col-12 col-sm-7">
+                            <h2><a href="#">Primeiro Acesso</a></h2>
                             <h2><a href="#">2&#170; via de Boleto</a></h2>
-                            <h2><a href="#">Alterar Dados</a></h2>
-                            <h2><a href="#">Demonstrativo IR</a></h2>
+                            <h2><a href="#">Informe de Rendimentos</a></h2>
                         </div>
                     </div>
                 </nav>
@@ -871,7 +879,6 @@
                 </nav>
             </div>
         </div>
-
 		<div class="row">
 			<div class="col-12 col-md col-xl mt-1">
 				<span class="footer-ans-number">ANS - Nº 34.852-0</span>

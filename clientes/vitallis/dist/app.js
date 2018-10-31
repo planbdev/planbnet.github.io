@@ -4538,6 +4538,41 @@ var HIDDEN_CLASS = 'noscrolling';
     }
 })();
 
+// FILE INPUT
+(function () {
+    if (document.querySelector('.form-file') != null) {
+        var n;
+
+        (function () {
+            var FILES = document.querySelectorAll('.form-file-item');
+            var HIDDEN = 'hidden';
+
+            var _loop2 = function _loop2() {
+                var FILE_INPUT = document.querySelector('#form-file-' + n + ' .form-file-input');
+                var FILE_TRIGGER = document.querySelector('#form-file-' + n + ' .form-file-trigger');
+                var FILE_RETURN = document.querySelector('#form-file-' + n + ' .form-file-return');
+                var FILE_SHOW = FILES[n + 1];
+
+                FILE_TRIGGER.addEventListener('click', function (event) {
+                    FILE_INPUT.focus();
+                    return false;
+                });
+
+                FILE_INPUT.addEventListener('change', function (event) {
+                    FILE_RETURN.innerHTML = this.value;
+                    if (FILE_SHOW != null) {
+                        FILE_SHOW.classList.remove(HIDDEN);
+                    }
+                });
+            };
+
+            for (n = 0; n < FILES.length; n++) {
+                _loop2();
+            }
+        })();
+    }
+})();
+
 function homeSlider() {
     var HOME_HERO_CNT = document.querySelector('.hero-home-carousel-cnt');
     if (HOME_HERO_CNT !== null) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -105,7 +105,7 @@
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#" class="active">Unidades</a>
+                    <a href="#">Unidades</a>
                     <div>
                         <a href="#">Hospital Keralty</a>
                         <a href="#">Keralty Centro Médico - Centro</a>
@@ -117,9 +117,9 @@
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#">Procedimentos</a>
+                    <a href="#" class="active">Procedimentos</a>
                     <div>
-                        <a href="#">Solicitar Autorização de Procedimento</a>
+                        <a href="#" class="active">Solicitar Autorização de Procedimento</a>
                     </div>
                 </li>
                 <li tabindex="0">
@@ -304,9 +304,9 @@
 
 <main class="main">
 
-    <section class="hero-page" style="background-image:url(../dist/images/img-top-unidades.jpg);">
+    <section class="hero-page" style="background-image:url(../dist/images/img-top-procedimentos-solicitar.jpg);">
         <div class="container">
-            <h1 class="hero-page-title">Unidades</h1>
+            <h1 class="hero-page-title">Socilitar Autorização de Procedimento</h1>
         </div>
     </section>
 
@@ -314,127 +314,160 @@
         <div class="container">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><i>/</i><span>Unidades</span></li>
+                <li><i>/</i><a href="#">Procedimentos</a></li>
+                <li><i>/</i><span>Socilitar Autorização de Procedimento</span></li>
             </ul>
         </div>
     </div>
 
-    <section class="section-ratio-6">
+    <section class="section-ratio-7">
         <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-hospital-barreiro.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-4 mt-md-0">
-                    <h2 class="title">Keralty Hospital <small>Barreiro</small></h2>
-                    <p class="text">Essa unidade é um centro clínico de especialidades médicas que dispõe de uma infraestrutura ampla e oferece serviços de atendimento eletivo, exames e diagnósticos por imagem como mamografia e a facilidade de agenda livre. A unidade possui fácil acesso aos clientes da região Norte e Pampulha.</p>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1">Mais informações</a>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form">
+                        <form action="" name="" method="" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h2 class="title title-m mb-0">Dados Pessoais</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mt-2">
+                                    <label for="nome">Nome Completo <i>&#42;</i></label>
+                                    <input type="text" class="" id="nome" required>
+                                </div>
+                                <div class="col-12 col-md-6 mt-2">
+                                    <label for="plano">Plano <i>&#42;</i></label>
+                                    <select class="" id="plano" required>
+                                        <option selected>Selecione o plano</option>
+                                        <option value="1">Vitallidade</option>
+                                        <option value="2">Plus</option>
+                                        <option value="3">Ouro Prata</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-2">
+                                    <label for="carteirinha">N&#186; da Carteirinha ou CPF <span class="js-info-popup">i</span> <i>&#42;</i>
+                                        <div class="form-info">
+                                            <img src="images/temp-carteirinha-exemplo.jpg">
+                                        </div>
+                                    </label>
+                                    <input type="text" class="" id="carteirinha" required>
+                                </div>
+                                
+                                <div class="col-12 col-md-6 col-lg-4 mt-2">
+                                    <label for="email">E-mail <i>&#42;</i></label>
+                                    <input type="email" class="" id="email" required>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-2">
+                                    <label for="telefone">Telefone</label>
+                                    <input type="tel" class="" id="telefone" placeholder="ex: (00) 00000-0000">
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-12">
+                                    <h2 class="title title-m mb-0 mt-4">Sobre o Procedimento</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4 col-xl-3 mt-2">
+                                            <label for="estado">Estado <i>&#42;</i></label>
+                                            <select class="" id="estado">
+                                                <option selected>UF</option>
+                                                <option value="1">AC</option>
+                                                <option value="2">AL</option>
+                                                <option value="3">AP</option>
+                                                <option value="4">AM</option>
+                                                <option value="5">BA</option>
+                                                <option value="6">CE</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12 col-md-8 col-xl-9 mt-2">
+                                            <label for="cidade">Cidade <i>&#42;</i></label>
+                                            <input type="text" class="" id="cidade">
+                                        </div>
+                                        <div class="col-12 col-lg-8 mt-2">
+                                            <label for="arquivo">Anexar documentos <i>&#42;</i></label>
+                                            <p class="text">Anexe o pedido médico, laudos comprobatórios e relatórios se houver. Somente arquivos word, pdf, jpg, png e txt. Até 10MB.</p>
 
-    <section class="section-ratio-6 section-gray">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-clinisanitas-centro.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-4 mt-md-0 order-md-first">
-                    <h2 class="title">Keralty Centro Médico <small>Centro</small></h2>
-                    <p class="text">A Keralty Centro Médico, localizada na região central de Belo Horizonte, conta com pronto atendimento de urgência e emergência 24 horas, serviços de diagnósticos e exames, atendimento eletivo e, além do fácil acesso, a unidade possui uma infraestrutura completa para melhor atender seus clientes.</p>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1">Mais informações</a>
-                </div>
-            </div>
-        </div>
-    </section>
+                                            <div class="form-file">  
+                                                <div class="form-file-item" id="form-file-0">
+                                                    <input type="file" class="form-file-input" id="form-file-input-0" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-0" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione um arquivo</small></p>
+                                                </div>
+                                                <div class="form-file-item hidden" id="form-file-1">
+                                                    <input type="file" class="form-file-input" id="form-file-input-1" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-1" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione outro arquivo</small></p>
+                                                </div>
+                                                <div class="form-file-item hidden" id="form-file-2">
+                                                    <input type="file" class="form-file-input" id="form-file-input-2" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-2" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione outro arquivo</small></p>
+                                                </div>
+                                                <div class="form-file-item hidden" id="form-file-3">
+                                                    <input type="file" class="form-file-input" id="form-file-input-3" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-3" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione outro arquivo</small></p>
+                                                </div>
+                                                <div class="form-file-item hidden" id="form-file-4">
+                                                    <input type="file" class="form-file-input" id="form-file-input-4" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-4" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione outro arquivo</small></p>
+                                                </div>
+                                                <div class="form-file-item hidden" id="form-file-5">
+                                                    <input type="file" class="form-file-input" id="form-file-input-5" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-5" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione outro arquivo</small></p>
+                                                </div>
+                                                <div class="form-file-item hidden" id="form-file-6">
+                                                    <input type="file" class="form-file-input" id="form-file-input-6" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-6" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione outro arquivo</small></p>
+                                                </div>
+                                                <div class="form-file-item hidden" id="form-file-7">
+                                                    <input type="file" class="form-file-input" id="form-file-input-7" name="" accept=".pdf,.doc,.docx,.jpg,.png,.jpeg,.bmp,.tif,.tiff|images/*">
+                                                    <label tabindex="0" for="form-file-input-7" class="form-file-trigger">+</label>
+                                                    <p class="form-file-return"><small>Adicione outro arquivo</small></p>
+                                                </div>
+                                            </div>
 
-    <section class="section-ratio-6">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-hospital-barreiro.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-4 mt-md-0">
-                    <h2 class="title">Keralty Centro Médico <small>Venda Nova</small></h2>
-                    <p class="text">Essa unidade é um centro clínico de especialidades médicas que dispõe de uma infraestrutura ampla e oferece serviços de atendimento eletivo, exames e diagnósticos por imagem como mamografia e a facilidade de agenda livre. A unidade possui fácil acesso aos clientes da região Norte e Pampulha.</p>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1">Mais informações</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ratio-6 section-gray">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-clinisanitas-contagem.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-4 mt-md-0 order-md-first">
-                    <h2 class="title">Keralty Centro Médico <small>Contagem</small></h2>
-                    <p class="text">Essa unidade conta com diversas especialidades no atendimento eletivo que dispõe de uma infraestrutura  completa, exames e diagnósticos por imagem como eletrocardiograma. Com fácil acesso para os seus clientes, oferece serviços de qualidade, atenção e cuidado a sua saúde.</p>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1">Mais informações</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ratio-6">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-clinisanitas-montesclaros.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-4 mt-md-0">
-                    <h2 class="title">Keralty Centro Médico <small>Montes Claros</small></h2>
-                    <p class="text">O Centro Médico Keralty em Montes Claros, conta com diversas especialidades no atendimento eletivo com uma  infraestrutura  completa  de  atendimentos e a facilidade de agenda livre. Fica localizada na região central da cidade, garantindo o fácil acesso para os seus clientes.</p>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1">Mais informações</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ratio-6 section-gray">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-laboratorios.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-4 mt-md-0">
-                    <h2 class="title">Keralty Laboratório</h2>
-                    <p class="text">A Keralty Laboratório veio para proporcionar maior comodidade e conforto, oferecendo serviços de apoio diagnóstico com rapidez, qualidade e confiabilidade seguindo um padrão de qualidade pautado em normas nacionais e internacionais. Realiza exames dos mais comuns aos de maior complexidade como bioquímica, hematologia, hormônios, imunologia, microbiologia, parasitologia, urinálise, toxicologia e outros.</p>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1">Mais informações</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-2">
+                                    <label for="mensagem">Mensagem</label>
+                                    <textarea name="mensagem" id="mensagem"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn-tp-form btn-cl-1 btn-pd-1 mt-3 ml-sm-auto" type="submit">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="newsletter">
-       	<div class="container">
-       		<div class="row">
-    			<div class="col newsletter-info">
-    				<svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m511.61 197.6c-1e-3 -0.77-0.173-1.933-0.472-2.603-0.787-2.854-2.536-5.461-5.154-7.281l-73.292-50.948v-54.616c0-7.24-5.872-13.112-13.112-13.112h-84.319l-71.743-49.878c-4.484-3.121-10.437-3.134-14.935-0.026l-72.206 49.904h-83.95c-7.242 0-13.112 5.872-13.112 13.112v53.973l-73.648 50.901c-3.623 2.504-5.583 6.507-5.645 10.6-4e-3 0.077-0.021 0.15-0.021 0.23l0.391 284.24c5e-3 3.477 1.391 6.81 3.852 9.266 2.458 2.451 5.788 3.827 9.26 3.827h0.018l485.38-0.667c7.24-0.01 13.104-5.889 13.094-13.13l-0.391-283.79zm-78.919-28.893l41.898 29.118-41.898 29.128v-58.246zm-176.68-122.82l33.31 23.156h-66.812l33.502-23.156zm-150.48 49.381h300.93v149.92l-101.04 70.242-41.194-31.954c-0.064-0.05-0.119-0.081-0.181-0.126-4.604-3.454-11.116-3.581-15.894 0.126l-41.493 32.185-101.13-69.893v-150.5zm-26.224 72.738v59.64l-43.146-29.819 43.146-29.821zm-53.056 54.864l158.67 109.66-158.35 122.82-0.32-232.48zm25.617 246.04l204.32-158.48 203.59 157.92-407.92 0.561zm275.27-136.64l158.28-110.04 0.32 233.06-158.6-123.02z"/><path d="m344.77 147.71h-177.54c-7.24 0-13.112 5.872-13.112 13.112s5.872 13.112 13.112 13.112h177.54c7.242 0 13.112-5.872 13.112-13.112s-5.87-13.112-13.112-13.112z"/><path d="m344.77 215.9h-177.54c-7.24 0-13.112 5.872-13.112 13.112s5.872 13.112 13.112 13.112h177.54c7.242 0 13.112-5.872 13.112-13.112s-5.87-13.112-13.112-13.112z"/></svg>
-    				<p>Receba informações úteis, notícias e conteúdos sobre saúde da Vitallis.</p>
-    			</div>
-    			<div class="col newsletter-form mt-2 mt-lg-0">
-    				<form>
-    					<input type="email" placeholder="E-mail">
-    					<input type="submit" class="btn-tp-2 btn-cl-1 btn-pd-1" value="Receber Newsletter">
-    				</form>
-    			</div>
-        	</div>
+        <div class="container">
+            <div class="row">
+                <div class="col newsletter-info">
+                    <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m511.61 197.6c-1e-3 -0.77-0.173-1.933-0.472-2.603-0.787-2.854-2.536-5.461-5.154-7.281l-73.292-50.948v-54.616c0-7.24-5.872-13.112-13.112-13.112h-84.319l-71.743-49.878c-4.484-3.121-10.437-3.134-14.935-0.026l-72.206 49.904h-83.95c-7.242 0-13.112 5.872-13.112 13.112v53.973l-73.648 50.901c-3.623 2.504-5.583 6.507-5.645 10.6-4e-3 0.077-0.021 0.15-0.021 0.23l0.391 284.24c5e-3 3.477 1.391 6.81 3.852 9.266 2.458 2.451 5.788 3.827 9.26 3.827h0.018l485.38-0.667c7.24-0.01 13.104-5.889 13.094-13.13l-0.391-283.79zm-78.919-28.893l41.898 29.118-41.898 29.128v-58.246zm-176.68-122.82l33.31 23.156h-66.812l33.502-23.156zm-150.48 49.381h300.93v149.92l-101.04 70.242-41.194-31.954c-0.064-0.05-0.119-0.081-0.181-0.126-4.604-3.454-11.116-3.581-15.894 0.126l-41.493 32.185-101.13-69.893v-150.5zm-26.224 72.738v59.64l-43.146-29.819 43.146-29.821zm-53.056 54.864l158.67 109.66-158.35 122.82-0.32-232.48zm25.617 246.04l204.32-158.48 203.59 157.92-407.92 0.561zm275.27-136.64l158.28-110.04 0.32 233.06-158.6-123.02z"/><path d="m344.77 147.71h-177.54c-7.24 0-13.112 5.872-13.112 13.112s5.872 13.112 13.112 13.112h177.54c7.242 0 13.112-5.872 13.112-13.112s-5.87-13.112-13.112-13.112z"/><path d="m344.77 215.9h-177.54c-7.24 0-13.112 5.872-13.112 13.112s5.872 13.112 13.112 13.112h177.54c7.242 0 13.112-5.872 13.112-13.112s-5.87-13.112-13.112-13.112z"/></svg>
+                    <p>Receba informações úteis, notícias e conteúdos sobre saúde da Vitallis.</p>
+                </div>
+                <div class="col newsletter-form mt-2 mt-lg-0">
+                    <form>
+                        <input type="email" placeholder="E-mail">
+                        <input type="submit" class="btn-tp-2 btn-cl-1 btn-pd-1" value="Receber Newsletter">
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 

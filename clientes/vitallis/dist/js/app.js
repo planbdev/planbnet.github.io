@@ -4573,6 +4573,50 @@ var HIDDEN_CLASS = 'noscrolling';
     }
 })();
 
+// SHOW DEPENDENTS FORM
+(function () {
+    var SHOW_QUIZ = document.querySelector('.js-tenho-interesse');
+
+    if (SHOW_QUIZ != null) {
+        SHOW_QUIZ.addEventListener('click', function (e) {
+            e.preventDefault();
+            var QUIZ_FORM = document.getElementById('formulario-saude');
+            var QUIZ_FORM_TOP = QUIZ_FORM.offsetTop;
+
+            QUIZ_FORM.classList.add(OPEN_CLASS);
+            window.scrollTo(0, QUIZ_FORM_TOP + 80);
+
+            return false;
+        });
+    }
+})();
+
+// SHOW NEW DEPENDENT
+(function () {
+    var SHOW_DEPENDENT = document.querySelector('.js-show-dependent');
+
+    if (SHOW_DEPENDENT != null) {
+        var DEPENDENTS = document.querySelectorAll('.form-dependent-item');
+        var DISABLED = 'btn-cl-disabled';
+
+        SHOW_DEPENDENT.addEventListener('click', function (event) {
+
+            for (var n = 1; n <= DEPENDENTS.length; n++) {
+                var DEPENDENT_ITEM = document.querySelector('#dependente-' + n);
+
+                if (!DEPENDENT_ITEM.classList.contains(OPEN_CLASS)) {
+                    DEPENDENT_ITEM.classList.add(OPEN_CLASS);
+                    if (n == DEPENDENTS.length) {
+                        SHOW_DEPENDENT.classList.add(DISABLED);
+                    }
+                    return false;
+                }
+            }
+            return false;
+        });
+    }
+})();
+
 function homeSlider() {
     var HOME_HERO_CNT = document.querySelector('.hero-home-carousel-cnt');
     if (HOME_HERO_CNT !== null) {

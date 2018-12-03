@@ -4538,6 +4538,96 @@ var HIDDEN_CLASS = 'noscrolling';
     }
 })();
 
+// OPEN PLAN COVERAGE MODAL
+(function () {
+    var PLAN_MODAL = document.querySelector('.js-plan-modal');
+
+    if (PLAN_MODAL != null) {
+        var removeOpenClass = function removeOpenClass() {
+            PLAN_MODAL_CLOSE_MENU.forEach(function (item) {
+                item.setAttribute('aria-expanded', 'false');
+            });
+            PLAN_MODAL_CONTAINER.classList.remove(OPEN_CLASS);
+            TAG_HTML.classList.remove(HIDDEN_CLASS);
+            TAG_BODY.classList.remove(HIDDEN_CLASS);
+        };
+
+        var insertOpenClass = function insertOpenClass() {
+            PLAN_MODAL.setAttribute('aria-expanded', 'true');
+            PLAN_MODAL_CONTAINER.classList.add(OPEN_CLASS);
+            TAG_HTML.classList.add(HIDDEN_CLASS);
+            TAG_BODY.classList.add(HIDDEN_CLASS);
+        };
+
+        var PLAN_MODAL_CLOSE_MENU = document.querySelectorAll('.js-close-plan-modal');
+        var PLAN_MODAL_CONTAINER = document.querySelector('.plan-modal');
+
+        PLAN_MODAL.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (PLAN_MODAL_CONTAINER.classList.contains(OPEN_CLASS)) {
+                removeOpenClass();
+            } else {
+                insertOpenClass();
+            }
+        });
+
+        PLAN_MODAL_CLOSE_MENU.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (PLAN_MODAL_CONTAINER.classList.contains(OPEN_CLASS)) {
+                    removeOpenClass();
+                }
+            });
+        });
+    }
+})();
+
+// OPEN PLAN PRICE MODAL
+(function () {
+    var PLAN_MODAL_PRICE = document.querySelectorAll('.js-plan-modal-price');
+
+    if (PLAN_MODAL_PRICE != null) {
+        var removeOpenClass = function removeOpenClass() {
+            PLAN_MODAL_PRICE_CLOSE.forEach(function (item) {
+                item.setAttribute('aria-expanded', 'false');
+            });
+            PLAN_MODAL_PRICE_CONTAINER.classList.remove(OPEN_CLASS);
+            TAG_HTML.classList.remove(HIDDEN_CLASS);
+        };
+
+        var insertOpenClass = function insertOpenClass() {
+            PLAN_MODAL_PRICE.forEach(function (item) {
+                item.setAttribute('aria-expanded', 'true');
+            });
+            PLAN_MODAL_PRICE_CONTAINER.classList.add(OPEN_CLASS);
+            TAG_HTML.classList.add(HIDDEN_CLASS);
+        };
+
+        var PLAN_MODAL_PRICE_CLOSE = document.querySelectorAll('.js-close-plan-price');
+        var PLAN_MODAL_PRICE_CONTAINER = document.querySelector('.modal-plan-price');
+
+        PLAN_MODAL_PRICE.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (PLAN_MODAL_PRICE_CONTAINER.classList.contains(OPEN_CLASS)) {
+                    removeOpenClass();
+                } else {
+                    insertOpenClass();
+                }
+            });
+        });
+
+        PLAN_MODAL_PRICE_CLOSE.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                if (PLAN_MODAL_PRICE_CONTAINER.classList.contains(OPEN_CLASS)) {
+                    removeOpenClass();
+                }
+            });
+        });
+    }
+})();
+
 // FILE INPUT
 (function () {
     if (document.querySelector('.form-file') != null) {

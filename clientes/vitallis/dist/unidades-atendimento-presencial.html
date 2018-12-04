@@ -693,6 +693,7 @@
     </div>
 </footer>
 
+<script async defer src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGR7RXictjtuAmEAvVuTqOo7wq6YmTJAE&callback=MAP_INIT"></script>
 <script async>
     // MAPS API
@@ -827,6 +828,8 @@
 
             markers.push(MARKER);
         }
+
+        var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
     }
 </script>
 <script type="text/javascript" src="./js/app.js"></script><script type="text/javascript" src="./js/main.js"></script><script type="text/javascript" src="./js/blog.js"></script></body>

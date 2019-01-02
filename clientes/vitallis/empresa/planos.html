@@ -23,8 +23,8 @@
                 <div class="access__item">
                     <nav>
                         <ul>
-                            <li class="access-active"><span>Cliente</span></li>
-                            <li><a href="#">Empresa</a></li>
+                            <li class="access-active"><span>Empresa</span></li>
+                            <li><a href="#">Cliente</a></li>
                             <li><a href="#">Prestador</a></li>
                         </ul>
                     </nav>
@@ -48,7 +48,7 @@
                             <i class="js-close-search"></i>
                             <div class="container">
                                 <div class="access__aside-form">
-                                    <form class="" action="" method="">
+                                    <form id="" class="" action="" method="">
                                         <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
                                         <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
                                     </form>
@@ -97,13 +97,6 @@
                 </li>
                 <li tabindex="0">
                     <a href="#" class="active">Planos</a>
-                    <div>
-                        <a href="#">Ouro e Prata</a>
-                        <a href="#">Vitallidade</a>
-                        <a href="#">Plus</a>
-                        <a href="#">Exclusivo</a>
-                        <a href="#">Odontológico</a>
-                    </div>
                 </li>
                 <li tabindex="0">
                     <a href="#">Unidades</a>
@@ -113,8 +106,9 @@
                         <a href="#">Keralty Centro Médico - Contagem</a>
                         <a href="#">Keralty Centro Médico - Venda Nova</a>
                         <a href="#">Keralty Centro Médico - Montes Claros</a>
-                        <a href="#">Atendimento Presencial</a>
                         <a href="#">Keralty Laboratório</a>
+                        <a href="#">Keralty Centro Oftalmológico</a>
+                        <a href="#">Atendimento Presencial</a>
                     </div>
                 </li>
                 <li tabindex="0">
@@ -136,7 +130,7 @@
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#">Blog</a>
+                    <a href="#">Notícias</a>
                 </li>
             </ul>
         </nav>
@@ -162,8 +156,8 @@
                     <div class="access__item">
                         <nav>
                             <ul>
-                                <li class="access-active"><span>Cliente</span></li>
-                                <li><a href="#">Empresa</a></li>
+                                <li class="access-active"><span>Empresa</span></li>
+                                <li><a href="#">Cliente</a></li>
                                 <li><a href="#">Prestador</a></li>
                             </ul>
                         </nav>
@@ -189,14 +183,7 @@
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Planos</a><input type="checkbox">
-                                <div>
-                                    <a href="#">Ouro e Prata</a>
-                                    <a href="#">Vitalidade</a>
-                                    <a href="#">Plus</a>
-                                    <a href="#">Exclusivo</a>
-                                    <a href="#">Odontológico</a>
-                                </div>
+                                <a href="#">Planos</a>
                             </li>
                             <li tabindex="0">
                                 <a href="#">Unidades</a><input type="checkbox">
@@ -206,8 +193,9 @@
                                     <a href="#">Keralty Centro Médico - Contagem</a>
                                     <a href="#">Keralty Centro Médico - Venda Nova</a>
                                     <a href="#">Keralty Centro Médico - Montes Claros</a>
-                                    <a href="#">Atendimento Presencial</a>
                                     <a href="#">Keralty Laboratório</a>
+                                    <a href="#">Keralty Centro Oftalmológico</a>
+                                    <a href="#">Atendimento Presencial</a>
                                 </div>
                             </li>
                             <li tabindex="0">
@@ -229,7 +217,7 @@
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Blog</a>
+                                <a href="#">Notícias</a>
                             </li>
                         </ul>
                     </nav>
@@ -285,16 +273,13 @@
                 <a href="#"><span>Primeiro Acesso</span></a>
             </li>
             <li>
-                <a href="#"><span>Guia Médico</span></a>
+                <a href="#"><span>Emissão de Boletos</span></a>
             </li>
             <li>
-                <a href="#"><span>Marcar Consulta</span></a>
+                <a href="#"><span>Relatórios de Utilização</span></a>
             </li>
             <li>
-                <a href="#"><span>Solicitar Autorização</span></a>
-            </li>
-            <li>
-                <a href="#"><span>Boletos</span></a>
+                <a href="#"><span>Movimentação Cadastral</span></a>
             </li>
         </ul>
     </div>
@@ -305,6 +290,21 @@
     <section class="hero-page" style="background-image:url(../empresa/images/img-top-planos.jpg);">
         <div class="container">
             <h1 class="hero-page-title">Planos</h1>
+            <div class="hero-page-filter hero-page-filter-color">
+                <div>
+                    Você está vendo planos em:
+                    <button><span>Minas Gerais</span></button><input type="checkbox">
+                    <ul>
+                        <li><a href="#">Bahia</a></li>
+                        <li><a href="#">Distrito Federal</a></li>
+                        <li><a href="#">Espírito Santo</a></li>
+                        <li><a href="#">Goiás</a></li>
+                        <li><a href="#">Maranhão</a></li>
+                        <li><a href="#">Pará</a></li>
+                        <li><a href="#">São Paulo</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -323,19 +323,19 @@
                 <div class="col-12 col-md-5 col-lg-6">
                     <a href="#">
                         <header class="plan-header">
-                            <strong><span class="heart"></span> O ideal para você | + Hospital Materdei</strong>
-                            <img src="images/img-plano-plus.jpg">
+                            <strong><span class="heart"></span> O ideal para sua empresa | + Hospital Materdei</strong>
+                            <img src="images/img-plano-plus-empresa.jpg">
                         </header>
                     </a>
                 </div>
                 <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
                     <h2 class="title">Plus</h2>
-                    <p class="text">Com cuidado diferenciado e atenção, o  Plano Plus é perfeito para você ter mais qualidade de vida.</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <ul class="text-list">
-                        <li><img src="images/icon-list-color.svg"><span>Acesso aos melhores hospitais;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Urgência e emergência nacional;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Programas de Promoção da Saúde por perfil;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Plano diferenciado.</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
                     </ul>
                     <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1 mt-2">Mais informações</a>
                 </div>
@@ -348,63 +348,17 @@
             <div class="row align-items-lg-center">
                 <div class="col-12 col-md-5 col-lg-6">
                     <a href="#">
-                        <img src="images/img-plano-vitallidade.jpg">
+                        <img src="images/img-plano-exclusivo-empresa.jpg">
                     </a>
                 </div>
                 <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0 order-lg-first">
-                    <h2 class="title">Vitallidade</h2>
-                    <p class="text">O Plano Vitallidade foi pensado para cuidar do que importa. Um plano com foco na melhor idade, que oferta aos seus clientes o cuidado adequado às necessidades do idoso.</p>
-                    <ul class="text-list">
-                        <li><img src="images/icon-list-color.svg"><span>Foco na melhor idade;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Serviço diferenciado na rede própria;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Urgência e Emergência 24h;</span></li> 
-                        <li><img src="images/icon-list-color.svg"><span>Programas de Saúde com equipe multidisciplinar.</span></li>
-                    </ul>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1 mt-2">Mais informações</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ratio-6">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-plano-exclusivo.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
                     <h2 class="title">Exclusivo</h2>
-                    <p class="text">O Plano Exclusivo oferece atendimento com uma equipe de saúde altamente qualificada que conhece o seu histórico e cuida de você em todos os momentos, com atenção contínua desde a sua primeira visita.</p>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <ul class="text-list">
-                        <li><img src="images/icon-list-color.svg"><span>Equipe de saúde qualificada;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Atenção contínua;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Equipe focada em conhecer o seu histórico de saúde;</span></li> 
-                        <li><img src="images/icon-list-color.svg"><span>Urgência e Emergência 24 horas.</span></li>
-                    </ul>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1 mt-2">Mais informações</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-ratio-6 section-gray">
-        <div class="container">
-            <div class="row align-items-lg-center">
-                <div class="col-12 col-md-5 col-lg-6">
-                    <a href="#">
-                        <img src="images/img-plano-ouroprata.jpg">
-                    </a>
-                </div>
-                <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0 order-lg-first">
-                    <h2 class="title">Ouro e Prata</h2>
-                    <p class="text">Com o Plano Ouro e Prata, você e sua família poderão ficar tranquilos para aproveitar o que a vida tem de melhor, através dos maiores hospitais, clínicas e laboratórios.</p>
-                    <ul class="text-list">
-                        <li><img src="images/icon-list-color.svg"><span>Escolha a opção que mais combina com você;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Tranquilidade para você e sua família;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Serviços de excelência;</span></li> 
-                        <li><img src="images/icon-list-color.svg"><span>Melhor custo benefício.</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
                     </ul>
                     <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1 mt-2">Mais informações</a>
                 </div>
@@ -417,17 +371,40 @@
             <div class="row align-items-lg-center">
                 <div class="col-12 col-md-5 col-lg-6">
                     <a href="#">
-                        <img src="images/img-plano-odontologico.jpg">
+                        <img src="images/img-plano-integral.jpg">
                     </a>
                 </div>
                 <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0">
-                    <h2 class="title">Odontológico</h2>
-                    <p class="text">O plano Odontológico ODONTOKER, oferece um modelo de atenção à saúde bucal avançada, com uma ampla cobertura de procedimentos (conforme ROL ANS) além de uma extensa rede credenciada.</p>
+                    <h2 class="title">Integral</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <ul class="text-list">
-                        <li><img src="images/icon-list-color.svg"><span>Consulta e Diagnóstico;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Urgências e Emergências;</span></li>
-                        <li><img src="images/icon-list-color.svg"><span>Prevenção e saúde bucal;</span></li> 
-                        <li><img src="images/icon-list-color.svg"><span>Próteses unitárias.</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                    </ul>
+                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1 mt-2">Mais informações</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-ratio-6 section-gray">
+        <div class="container">
+            <div class="row align-items-lg-center">
+                <div class="col-12 col-md-5 col-lg-6">
+                    <a href="#">
+                        <img src="images/img-plano-odontologico-empresa.jpg">
+                    </a>
+                </div>
+                <div class="col-12 col-md-7 col-lg-6 mt-3 mt-md-0 order-lg-first">
+                    <h2 class="title">Odontológico</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <ul class="text-list">
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
+                        <li><img src="images/icon-list-color.svg"><span>Lorem ipsum dolor sit amet;</span></li>
                     </ul>
                     <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1 mt-2">Mais informações</a>
                 </div>
@@ -522,29 +499,6 @@
                     </ul>
                 </nav>
                 <nav class="mt-2">
-                    <h2><a href="#">Planos</a></h2>
-                    <h2><a href="#">Guia Médico</a></h2>
-                    <h2><a href="#">Marcar Consulta</a></h2>
-                </nav>
-            </div>
-            <div class="flex-xl-fill">
-                <a href="#" class="footer-ans mt-1">Informativo ANS</a>
-                <nav class="mt-1">
-                    <div class="row">
-                        <div class="col-12 col-sm-5">
-                            <h2><a href="#">Notícias</a></h2>
-                            <h2><a href="#">Blog</a></h2>
-                            <h2><a href="#">Imprensa</a></h2>
-                            <h2><a href="#">Releases</a></h2>
-                        </div>
-                        <div class="col-12 col-sm-7">
-                            <h2><a href="#">Primeiro Acesso</a></h2>
-                            <h2><a href="#">2&#170; via de Boleto</a></h2>
-                            <h2><a href="#">Informe de Rendimentos</a></h2>
-                        </div>
-                    </div>
-                </nav>
-                <nav class="mt-1">
                     <h2><span>Baixe o App</span></h2>
                     <div>
                         <a href="#" target="_blank" class="icon icon-android">
@@ -553,6 +507,27 @@
                         <a href="#" target="_blank" class="icon icon-apple">
                             <span class="sr-only">Apple</span>
                         </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="flex-xl-fill">
+                <a href="#" class="footer-ans mt-1">Informativo ANS</a>
+                <nav class="mt-1">
+                    <div class="row">
+                        <div class="col-12 col-sm-5">
+                            <h2><a href="#">Planos</a></h2>
+                            <h2><a href="#">Notícias</a></h2>
+                            <h2><a href="#">Blog</a></h2>
+                            <h2><a href="#">Imprensa</a></h2>
+                            <h2><a href="#">Releases</a></h2>
+                        </div>
+                        <div class="col-12 col-sm-7">
+                            <h2><a href="#">Primeiro Acesso</a></h2>
+                            <h2><a href="#">Relatório de Utilização</a></h2>
+                            <h2><a href="#">Movimentação Cadastral</a></h2>
+                            <h2><a href="#">Emissão de Boletos</a></h2>
+                            <h2><a href="#">Substituição de Prestadores</a></h2>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -572,7 +547,7 @@
                 </div>
             </div>
 			<div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-1">
-				<p>Vitallis Todos os direitos reservados | 2018</p>
+				<p>Vitallis Todos os direitos reservados | 2019</p>
 			</div>
 			<div class="col-12 col-md-6 col-lg-2 col-xl-3 text-right mt-1">
                 <a href="https://www.planb.com.br/" target="_blank">

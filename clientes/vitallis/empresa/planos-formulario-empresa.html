@@ -23,8 +23,8 @@
                 <div class="access__item">
                     <nav>
                         <ul>
-                            <li class="access-active"><span>Cliente</span></li>
-                            <li><a href="#">Empresa</a></li>
+                            <li class="access-active"><span>Empresa</span></li>
+                            <li><a href="#">Cliente</a></li>
                             <li><a href="#">Prestador</a></li>
                         </ul>
                     </nav>
@@ -48,7 +48,7 @@
                             <i class="js-close-search"></i>
                             <div class="container">
                                 <div class="access__aside-form">
-                                    <form class="" action="" method="">
+                                    <form id="" class="" action="" method="">
                                         <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
                                         <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
                                     </form>
@@ -97,13 +97,6 @@
                 </li>
                 <li tabindex="0">
                     <a href="#" class="active">Planos</a>
-                    <div>
-                        <a href="#">Ouro e Prata</a>
-                        <a href="#">Vitallidade</a>
-                        <a href="#">Plus</a>
-                        <a href="#">Exclusivo</a>
-                        <a href="#">Odontológico</a>
-                    </div>
                 </li>
                 <li tabindex="0">
                     <a href="#">Unidades</a>
@@ -113,8 +106,9 @@
                         <a href="#">Keralty Centro Médico - Contagem</a>
                         <a href="#">Keralty Centro Médico - Venda Nova</a>
                         <a href="#">Keralty Centro Médico - Montes Claros</a>
-                        <a href="#">Atendimento Presencial</a>
                         <a href="#">Keralty Laboratório</a>
+                        <a href="#">Keralty Centro Oftalmológico</a>
+                        <a href="#">Atendimento Presencial</a>
                     </div>
                 </li>
                 <li tabindex="0">
@@ -136,7 +130,7 @@
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#">Blog</a>
+                    <a href="#">Notícias</a>
                 </li>
             </ul>
         </nav>
@@ -162,8 +156,8 @@
                     <div class="access__item">
                         <nav>
                             <ul>
-                                <li class="access-active"><span>Cliente</span></li>
-                                <li><a href="#">Empresa</a></li>
+                                <li class="access-active"><span>Empresa</span></li>
+                                <li><a href="#">Cliente</a></li>
                                 <li><a href="#">Prestador</a></li>
                             </ul>
                         </nav>
@@ -189,14 +183,7 @@
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Planos</a><input type="checkbox">
-                                <div>
-                                    <a href="#">Ouro e Prata</a>
-                                    <a href="#">Vitalidade</a>
-                                    <a href="#">Plus</a>
-                                    <a href="#">Exclusivo</a>
-                                    <a href="#">Odontológico</a>
-                                </div>
+                                <a href="#">Planos</a>
                             </li>
                             <li tabindex="0">
                                 <a href="#">Unidades</a><input type="checkbox">
@@ -206,8 +193,9 @@
                                     <a href="#">Keralty Centro Médico - Contagem</a>
                                     <a href="#">Keralty Centro Médico - Venda Nova</a>
                                     <a href="#">Keralty Centro Médico - Montes Claros</a>
-                                    <a href="#">Atendimento Presencial</a>
                                     <a href="#">Keralty Laboratório</a>
+                                    <a href="#">Keralty Centro Oftalmológico</a>
+                                    <a href="#">Atendimento Presencial</a>
                                 </div>
                             </li>
                             <li tabindex="0">
@@ -229,7 +217,7 @@
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Blog</a>
+                                <a href="#">Notícias</a>
                             </li>
                         </ul>
                     </nav>
@@ -285,16 +273,13 @@
                 <a href="#"><span>Primeiro Acesso</span></a>
             </li>
             <li>
-                <a href="#"><span>Guia Médico</span></a>
+                <a href="#"><span>Emissão de Boletos</span></a>
             </li>
             <li>
-                <a href="#"><span>Marcar Consulta</span></a>
+                <a href="#"><span>Relatórios de Utilização</span></a>
             </li>
             <li>
-                <a href="#"><span>Solicitar Autorização</span></a>
-            </li>
-            <li>
-                <a href="#"><span>Boletos</span></a>
+                <a href="#"><span>Movimentação Cadastral</span></a>
             </li>
         </ul>
     </div>
@@ -483,523 +468,544 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12">
 
-                            <div class="row form-row">
+                        <div class="accordion">
+
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 00 a 18 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 00 a 18 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>00 a 18 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>00 a 18 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 19 a 23 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 19 a 23 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>19 a 23 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>19 a 23 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 24 a 28 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 24 a 28 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>24 a 28 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>24 a 28 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 29 a 33 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 29 a 33 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>29 a 33 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>29 a 33 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 34 a 38 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 34 a 38 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>34 a 38 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>34 a 38 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 39 a 43 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 39 a 43 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>39 a 43 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>39 a 43 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 44 a 48 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 44 a 48 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>44 a 48 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>44 a 48 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 49 a 53 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 49 a 53 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>49 a 53 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>49 a 53 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária de 54 a 58 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária de 54 a 58 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>19 a 23 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>54 a 58 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row form-row">
+                            <div class="form-row">
+                                <h2 class="title title-l">Faixa etária acima de 59 anos</h2>
                                 <div class="col-12">
-                                    <h3 class="title title-l">Faixa etária acima de 59 anos</h3>
-                                </div>
-                                <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
-                                    <label><strong>acima de 59 anos</strong></label>
-                                    <div>
-                                        <label for="">Total de vidas</label>
-                                        <input type="text" class="" id="" required>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <label><strong>Masculino</strong></label>
+                                        <div class="col-12 col-md-5 col-lg-4 col-xl-2 order-xl-1">
+                                            <label><strong>acima de 59 anos</strong></label>
                                             <div>
-                                                <label for="">Quantidade de vidas</label>
+                                                <label for="">Total de vidas</label>
                                                 <input type="text" class="" id="" required>
                                             </div>
                                         </div>
-                                        <div class="col-6">
-                                            <label><strong>Feminino</strong></label>
-                                            <div>
-                                                <label for="">Quantidade de vidas</label>
-                                                <input type="text" class="" id="" required>
+                                        <div class="col-12 col-md-7 col-lg-6 col-xl-4 mt-2 mt-md-0 order-xl-3">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label><strong>Masculino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <label><strong>Feminino</strong></label>
+                                                    <div>
+                                                        <label for="">Quantidade de vidas</label>
+                                                        <input type="text" class="" id="" required>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
-                                    <label><strong>Localidade(s)</strong></label>
-                                    <div class="row">
-                                        <div class="col-12 col-md-8 col-lg-9">
-                                            <label for="">Cidade(s)</label>
-                                            <input type="text" class="" id="" required>
-                                        </div>
-                                        <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
-                                            <label for="">Estado</label>
-                                            <select class="" id="estado">
-                                                <option selected>UF</option>
-                                                <option value="1">AC</option>
-                                                <option value="2">AL</option>
-                                                <option value="3">AP</option>
-                                                <option value="4">AM</option>
-                                                <option value="5">BA</option>
-                                                <option value="6">CE</option>
-                                            </select>
+                                        <div class="col-12 col-xl-6 mt-2 mt-xl-0 order-xl-2">
+                                            <label><strong>Localidade(s)</strong></label>
+                                            <div class="row">
+                                                <div class="col-12 col-md-8 col-lg-9">
+                                                    <label for="">Cidade(s)</label>
+                                                    <input type="text" class="" id="" required>
+                                                </div>
+                                                <div class="col-5 col-md-4 col-lg-3 mt-2 mt-md-0">
+                                                    <label for="">Estado</label>
+                                                    <select class="" id="estado">
+                                                        <option selected>UF</option>
+                                                        <option value="1">AC</option>
+                                                        <option value="2">AL</option>
+                                                        <option value="3">AP</option>
+                                                        <option value="4">AM</option>
+                                                        <option value="5">BA</option>
+                                                        <option value="6">CE</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

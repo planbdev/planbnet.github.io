@@ -23,8 +23,8 @@
                 <div class="access__item">
                     <nav>
                         <ul>
-                            <li class="access-active"><span>Cliente</span></li>
-                            <li><a href="#">Empresa</a></li>
+                            <li class="access-active"><span>Empresa</span></li>
+                            <li><a href="#">Cliente</a></li>
                             <li><a href="#">Prestador</a></li>
                         </ul>
                     </nav>
@@ -48,7 +48,7 @@
                             <i class="js-close-search"></i>
                             <div class="container">
                                 <div class="access__aside-form">
-                                    <form class="" action="" method="">
+                                    <form id="" class="" action="" method="">
                                         <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
                                         <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
                                     </form>
@@ -97,13 +97,6 @@
                 </li>
                 <li tabindex="0">
                     <a href="#" class="active">Planos</a>
-                    <div>
-                        <a href="#">Ouro e Prata</a>
-                        <a href="#">Vitallidade</a>
-                        <a href="#">Plus</a>
-                        <a href="#">Exclusivo</a>
-                        <a href="#" class="active">Odontológico</a>
-                    </div>
                 </li>
                 <li tabindex="0">
                     <a href="#">Unidades</a>
@@ -113,8 +106,9 @@
                         <a href="#">Keralty Centro Médico - Contagem</a>
                         <a href="#">Keralty Centro Médico - Venda Nova</a>
                         <a href="#">Keralty Centro Médico - Montes Claros</a>
-                        <a href="#">Atendimento Presencial</a>
                         <a href="#">Keralty Laboratório</a>
+                        <a href="#">Keralty Centro Oftalmológico</a>
+                        <a href="#">Atendimento Presencial</a>
                     </div>
                 </li>
                 <li tabindex="0">
@@ -136,7 +130,7 @@
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#">Blog</a>
+                    <a href="#">Notícias</a>
                 </li>
             </ul>
         </nav>
@@ -162,8 +156,8 @@
                     <div class="access__item">
                         <nav>
                             <ul>
-                                <li class="access-active"><span>Cliente</span></li>
-                                <li><a href="#">Empresa</a></li>
+                                <li class="access-active"><span>Empresa</span></li>
+                                <li><a href="#">Cliente</a></li>
                                 <li><a href="#">Prestador</a></li>
                             </ul>
                         </nav>
@@ -189,14 +183,7 @@
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Planos</a><input type="checkbox">
-                                <div>
-                                    <a href="#">Ouro e Prata</a>
-                                    <a href="#">Vitalidade</a>
-                                    <a href="#">Plus</a>
-                                    <a href="#">Exclusivo</a>
-                                    <a href="#">Odontológico</a>
-                                </div>
+                                <a href="#">Planos</a>
                             </li>
                             <li tabindex="0">
                                 <a href="#">Unidades</a><input type="checkbox">
@@ -206,8 +193,9 @@
                                     <a href="#">Keralty Centro Médico - Contagem</a>
                                     <a href="#">Keralty Centro Médico - Venda Nova</a>
                                     <a href="#">Keralty Centro Médico - Montes Claros</a>
-                                    <a href="#">Atendimento Presencial</a>
                                     <a href="#">Keralty Laboratório</a>
+                                    <a href="#">Keralty Centro Oftalmológico</a>
+                                    <a href="#">Atendimento Presencial</a>
                                 </div>
                             </li>
                             <li tabindex="0">
@@ -229,7 +217,7 @@
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Blog</a>
+                                <a href="#">Notícias</a>
                             </li>
                         </ul>
                     </nav>
@@ -285,16 +273,13 @@
                 <a href="#"><span>Primeiro Acesso</span></a>
             </li>
             <li>
-                <a href="#"><span>Guia Médico</span></a>
+                <a href="#"><span>Emissão de Boletos</span></a>
             </li>
             <li>
-                <a href="#"><span>Marcar Consulta</span></a>
+                <a href="#"><span>Relatórios de Utilização</span></a>
             </li>
             <li>
-                <a href="#"><span>Solicitar Autorização</span></a>
-            </li>
-            <li>
-                <a href="#"><span>Boletos</span></a>
+                <a href="#"><span>Movimentação Cadastral</span></a>
             </li>
         </ul>
     </div>
@@ -305,6 +290,21 @@
     <section class="hero-page" style="background-image:url(../empresa/images/img-top-plano-odontologico.jpg);">
         <div class="container">
             <h1 class="hero-page-title">Odontológico</h1>
+            <div class="hero-page-filter hero-page-filter-color">
+                <div>
+                    Você está vendo planos em:
+                    <button><span>Minas Gerais</span></button><input type="checkbox">
+                    <ul>
+                        <li><a href="#">Bahia</a></li>
+                        <li><a href="#">Distrito Federal</a></li>
+                        <li><a href="#">Espírito Santo</a></li>
+                        <li><a href="#">Goiás</a></li>
+                        <li><a href="#">Maranhão</a></li>
+                        <li><a href="#">Pará</a></li>
+                        <li><a href="#">São Paulo</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -318,12 +318,158 @@
         </div>
     </div>
 
-    <section class="section-ratio-7 section-gray">
+    <section class="section-ratio-7">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 col-xl-5">
+            <div class="row justify-content-center mb-4">
+                <div class="col-12 col-lg-10 col-xl-8 text-center">
                     <p class="text">O plano Odontológico <strong>ODONTOKER</strong>, oferece um modelo de atenção à saúde bucal avançada, com uma ampla cobertura de procedimentos (conforme ROL ANS) além de uma extensa rede credenciada, com profissionais qualificados e de fácil acesso.</p>
-                    <p class="text"><strong>Cobertura (Conforme Rol de procedimento ANS):</strong></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <article class="plan-box">
+                        <header>
+                            <div>
+                                <h2 class="title text-inverse">Odontoker I</h2>
+                                <strong class="text-inverse">Registro ANS: 481.507/18-6</strong>
+                            </div>
+                            <div>
+                                <p>
+                                    <small>A partir de</small>
+                                    R$ 18,00<span>por mês</span>
+                                </p>
+                            </div>
+                        </header>
+                        <main>
+                            <div>
+                                <h3 class="title title-el">Coletivo empresarial</h3>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt consectetur labore dolore.</p>
+                            </div>
+                            <div>
+                                <h3 class="title title-el">Rede Credenciada:</h3>
+                                <a href="#" class="btn-tp-4 btn-cl-3 btn-pd-5 btn-tr">Acessar Rede Credenciada</a>
+                                <h3 class="title title-el">Área de Abrangência:</h3>
+                                <a href="#plan-odontokeri" class="btn-tp-4 btn-cl-3 btn-pd-5 btn-tr js-plan-modal">Ver Lista Completa</a>
+                            </div>
+                        </main>
+                        <footer>
+                            <a href="#" class="js-plan-modal-price">Cotar Plano Odontoker I</a>
+                        </footer>
+                    </article>
+                    <div class="plan-pricing">
+                        <div class="accordion">
+                            <div>
+                                <h2>Tabela de preço plano Odontoker I</h2>
+                                <div class="accordion-body">
+                                    <table class="plan-agerange">
+                                        <thead>
+                                            <tr>
+                                                <th>Condição</th>
+                                                <th>Preço</th> 
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Empresarial 2 a 29 vidas</strong></td>
+                                                <td><strong>R$ 19,00</strong></td> 
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Empresarial 29 a 99 vidas</strong></td>
+                                                <td><strong>R$ 18,00</strong></td> 
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Empresarial +100 vidas</strong></td>
+                                                <td><strong>cotado</strong></td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="plan-coparticipation mt-2">
+                                        <h3>Carências</h3>
+                                        <ul>
+                                            <li><strong>Produto Pessoa Jurídica (PJ) 2 a 29 vidas</strong><br>Diagnóstico (24 horas), Prevenção (24 horas), Radiologia (24 horas), Cirurgia (24 horas), Dentística Restauradora (24 horas), Endodontia (24 horas), Odontopediatria (24 horas), Periodontia (24 horas), Próteses Dentárias (180 dias)</li>
+                                            <li><strong>Pessoa Juridica > de 30 usuários e > 100 usuários</strong><br>Sem carência (conforme regulação ANS)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <article class="plan-box">
+                        <header>
+                            <div>
+                                <h2 class="title text-inverse">Odontoker II</h2>
+                                <strong class="text-inverse">Registro ANS: 481.506/18-8</strong>
+                            </div>
+                            <div>
+                                <p>
+                                    <small>A partir de</small>
+                                    R$ 18,00<span>por mês</span>
+                                </p>
+                            </div>
+                        </header>
+                        <main>
+                            <div>
+                                <h3 class="title title-el">Coletivo empresarial</h3>
+                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt consectetur labore dolore.</p>
+                            </div>
+                            <div>
+                                <h3 class="title title-el">Rede Credenciada:</h3>
+                                <a href="#" class="btn-tp-4 btn-cl-3 btn-pd-5 btn-tr">Acessar Rede Credenciada</a>
+                                <h3 class="title title-el">Área de Abrangência:</h3>
+                                <a href="#plan-odontokerii" class="btn-tp-4 btn-cl-3 btn-pd-5 btn-tr js-plan-modal">Ver Lista Completa</a>
+                            </div>
+                        </main>
+                        <footer>
+                            <a href="#" class="js-plan-modal-price">Cotar Plano Odontoker II</a>
+                        </footer>
+                    </article>
+                    <div class="plan-pricing">
+                        <div class="accordion">
+                            <div>
+                                <h2>Tabela de preço plano Odontoker II</h2>
+                                <div class="accordion-body">
+                                    <table class="plan-agerange">
+                                        <thead>
+                                            <tr>
+                                                <th>Condição</th>
+                                                <th>Preço</th> 
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Empresarial 2 a 29 vidas</strong></td>
+                                                <td><strong>R$ 19,00</strong></td> 
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Empresarial 29 a 99 vidas</strong></td>
+                                                <td><strong>R$ 18,00</strong></td> 
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Empresarial +100 vidas</strong></td>
+                                                <td><strong>cotado</strong></td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="plan-coparticipation mt-2">
+                                        <h3>Carências</h3>
+                                        <ul>
+                                            <li><strong>Produto Pessoa Jurídica (PJ) 2 a 29 vidas</strong><br>Diagnóstico (24 horas), Prevenção (24 horas), Radiologia (24 horas), Cirurgia (24 horas), Dentística Restauradora (24 horas), Endodontia (24 horas), Odontopediatria (24 horas), Periodontia (24 horas), Próteses Dentárias (180 dias)</li>
+                                            <li><strong>Pessoa Juridica > de 30 usuários e  > 100 usuários</strong><br>Sem carência conforme regulação ANS)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 text-lg-center">
+                    <h2 class="title">Cobertura (Conforme Rol de procedimento ANS):</h2>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-5">
                     <ul class="text-list">
                         <li><img src="images/icon-list-color.svg">Consulta e Diagnóstico</li>
                         <li><img src="images/icon-list-color.svg">Urgências e Emergências</li>
@@ -337,228 +483,69 @@
                         <li><img src="images/icon-list-color.svg">Odontopediatria</li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-8 col-lg-6 offset-xl-1 mt-3 mt-lg-0">
-                    <h2 class="title title-m title-image">
-                        <div>
-                            <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z" fill="#000066"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z" fill="#000066"/></svg> 
-                        </div>
-                        <div>Confira aqui a lista de abrangência para o Plano Odontológico</div>
-                    </h2>
-                    <a href="#" class="btn-tp-2 btn-cl-3 btn-pd-1 js-plan-modal">Ver lista completa</a>
-                </div>
-                <div id="plan-coverage" class="plan-modal" role="">
-                    <i class="js-close-plan-modal"></i>
-                    <div class="container">
-                        <div class="plan-coverage">
-                            <h3 class="title title-m">Lista de Abrangência <small>Plano Ouro e Prata</small></h3>
-                            <div class="mt-2">
-                                <h4 class="title title-l">Espírito Santo</h4>
-                                <ul>
-                                    <li>Anchieta</li>
-                                    <li>Aracruz</li>
-                                    <li>Afonso</li>
-                                    <li>Claudio</li>
-                                    <li>Baixo Guandu</li>
-                                    <li>Cachoeiro de Itapemirim</li>
-                                    <li>Cariacica</li>
-                                    <li>Colatina</li>
-                                    <li>Guarapari</li>
-                                    <li>Linhares</li>
-                                    <li>Nova Venécia</li>
-                                    <li>São Matheus</li>
-                                    <li>Serra</li>
-                                    <li>Vila Velha</li>
-                                    <li>Vitória</li>
-                                </ul>
-                            </div>
-                            <div class="mt-2">
-                                <h4 class="title title-l">Minas Gerais</h4>
-                                <ul>
-                                    <li>Aimorés</li>
-                                    <li>Além Paraíba</li>
-                                    <li>Alfenas</li>
-                                    <li>Almenara</li>
-                                    <li>Araçuaí</li>
-                                    <li>Araguari</li>
-                                    <li>Arapuá</li>
-                                    <li>Araxá</li>
-                                    <li>Barbacena</li>
-                                    <li>Belo Horizonte</li>
-                                    <li>Belo Oriente</li>
-                                    <li>Betim</li>
-                                    <li>Bocaiuva</li>
-                                    <li>Bom Despacho</li>
-                                    <li>Brumadinho</li>
-                                    <li>Caeté</li>
-                                    <li>Campos Altos</li>
-                                    <li>Carangola</li>
-                                    <li>Caratinga</li>
-                                    <li>Carmo do Paranaíba</li>
-                                    <li>Cataguases</li>
-                                    <li>Caxambu</li>
-                                    <li>Conceição do Mato Dentro</li>
-                                    <li>Congonhas</li>
-                                    <li>Conselheiro Lafaiete</li>
-                                    <li>Contagem</li>
-                                    <li>Coronel Fabriciano</li>
-                                    <li>Curvelo</li>
-                                    <li>Diamantina,</li>
-                                    <li>Divinópolis</li>
-                                    <li>Esmeraldas</li>
-                                    <li>Frei Gaspar</li>
-                                    <li>Frei Inocêncio</li>
-                                    <li>Frutal</li>
-                                    <li>Governador Valadares</li>
-                                    <li>Guanhães</li>
-                                    <li>Ibiá</li>
-                                    <li>Ibirité</li>
-                                    <li>Inhapim</li>
-                                    <li>Ipatinga</li>
-                                    <li>Itabira</li>
-                                    <li>Itabirito</li>
-                                    <li>Itajubá</li>
-                                    <li>Itanhomi</li>
-                                    <li>Itaúna</li>
-                                    <li>Ituiutaba</li>
-                                    <li>Iturama</li>
-                                    <li>Janaúba</li>
-                                    <li>Januária</li>
-                                    <li>João Monlevade</li>
-                                    <li>João Pinheiro</li>
-                                    <li>Juatuba</li>
-                                    <li>Juiz de Fora</li>
-                                    <li>Lagoa Santa</li>
-                                    <li>Lambari</li>
-                                    <li>Lavras</li>
-                                    <li>Leopoldina</li>
-                                    <li>Manhuaçu</li>
-                                    <li>Manhumirim</li>
-                                    <li>Mantena</li>
-                                    <li>Mariana</li>
-                                    <li>Mateus Leme</li>
-                                    <li>Monte Alegre de Minas</li>
-                                    <li>Monte Carmelo</li>
-                                    <li>Montes Claros</li>
-                                    <li>Muriaé</li>
-                                    <li>Nanuque</li>
-                                    <li>Nova Lima</li>
-                                    <li>Nova Ponte</li>
-                                    <li>Ouro Preto</li>
-                                    <li>Pará de Minas</li>
-                                    <li>Paracatu</li>
-                                    <li>Passos</li>
-                                    <li>Patos de Minas</li>
-                                    <li>Patrocínio</li>
-                                    <li>Pedro Leopoldo</li>
-                                    <li>Perdões</li>
-                                    <li>Pirapora</li>
-                                    <li>Poços de Caldas</li>
-                                    <li>Ponte Nova</li>
-                                    <li>Pouso Alegre</li>
-                                    <li>Prata</li>
-                                    <li>Ribeirão das Neves</li>
-                                    <li>Sabará</li>
-                                    <li>Santa Barbara</li>
-                                    <li>Santa Luzia</li>
-                                    <li>Santa Rita do Sapucaí</li>
-                                    <li>Santos Dumont</li>
-                                    <li>São Gotardo</li>
-                                    <li>São João Nepomuceno</li>
-                                    <li>São Lourenço</li>
-                                    <li>São Sebastião do Paraíso</li>
-                                    <li>Sarzedo</li>
-                                    <li>Serro</li>
-                                    <li>Sete Lagoas</li>
-                                    <li>Teófilo Otoni</li>
-                                    <li>Timóteo</li>
-                                    <li>Três Corações</li>
-                                    <li>Três Marias</li>
-                                    <li>Tupaciguara</li>
-                                    <li>Ubá</li>
-                                    <li>Ubaporanga</li>
-                                    <li>Uberaba</li>
-                                    <li>Uberlândia</li>
-                                    <li>Unaí</li>
-                                    <li>Varginha</li>
-                                    <li>Vespasiano</li>
-                                    <li>Viçosa</li>
-                                </ul>
-                                <p>Obs.: Para atendimento na clinica Concel em Mariana é necessário a autorização da mesma).</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button id="" class="js-close-plan-modal plan-modal-off" aria-label="Fechar Lista de Abrangência" title="Sair da Lista de Abrangência">
-                        <span class="sr-only">Sair da Lista de Abrangência</span>
-                    </button>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="section-ratio-5">
+    <div id="#plan-odontokeri" class="plan-modal" role="">
+        <i class="js-close-plan-modal"></i>
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <article class="plan-box">
-                        <header>
-                            <div>
-                                <h2 class="title text-inverse">Odontoker I</h2>
-                                <strong class="text-inverse">Registro ANS: 9998/99</strong>
-                            </div>
-                            <div>
-                                <p>
-                                    <small>A partir de</small>
-                                    R$ 26,90<span>por mês</span>
-                                </p>
-                            </div>
-                        </header>
-                        <main>
-                            <div>
-                                <h3 class="title title-el">Lorem ipsum:</h3>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div>
-                                <h3 class="title title-el">Rede Credenciada:</h3>
-                                <a href="#" class="btn-tp-4 btn-cl-3 btn-pd-5 btn-tr">Acessar Rede Credenciada</a>
-                            </div>
-                        </main>
-                        <footer>
-                            <a href="#" class="js-plan-modal-price">Cotar Plano Odontoker</a>
-                        </footer>
-                    </article>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <article class="plan-box">
-                        <header>
-                            <div>
-                                <h2 class="title text-inverse">Odontoker II</h2>
-                                <strong class="text-inverse">Registro ANS: 9999/99</strong>
-                            </div>
-                            <div>
-                                <p>
-                                    <small>A partir de</small>
-                                    R$ 47,85<span>por mês</span>
-                                </p>
-                            </div>
-                        </header>
-                        <main>
-                            <div>
-                                <h3 class="title title-el">Lorem ipsum:</h3>
-                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            </div>
-                            <div>
-                                <h3 class="title title-el">Rede Credenciada:</h3>
-                                <a href="#" class="btn-tp-4 btn-cl-3 btn-pd-5 btn-tr">Acessar Rede Credenciada</a>
-                            </div>
-                        </main>
-                        <footer>
-                            <a href="#" class="js-plan-modal-price">Cotar Plano Odontoker</a>
-                        </footer>
-                    </article>
+            <div class="plan-coverage">
+                <h3 class="title title-m">Lista de Abrangência <small>Odontoker I</small></h3>
+                <div class="mt-2">
+                    <h4 class="title title-l">Minas Gerais</h4>
+                    <ul>
+                        <li>BELO HORIZONTE</li>
+                        <li>BETIM</li>
+                        <li>BRUMADINHO</li>
+                        <li>CAETÉ</li>
+                        <li>CONFINS</li>
+                        <li>CONTAGEM</li>
+                        <li>IBIRITÉ</li>
+                        <li>LAGOA SANTA</li>
+                        <li>MATOZINHOS</li>
+                        <li>NOVA LIMA</li>
+                        <li>PEDRO LEOPOLDO</li>
+                        <li>RIBEIRÃO DAS NEVES</li>
+                        <li>SABARÁ</li>
+                        <li>SANTA LUZIA</li>
+                        <li>SÃO JOSÉ DA LAPA</li>
+                        <li>SARZEDO</li>
+                        <li>SETE LAGOAS</li>
+                        <li>VESPASIANO</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+        <button id="" class="js-close-plan-modal plan-modal-off" aria-label="Fechar Lista de Abrangência" title="Sair da Lista de Abrangência">
+            <span class="sr-only">Sair da Lista de Abrangência</span>
+        </button>
+    </div>
+
+    <div id="#plan-odontokerii" class="plan-modal" role="">
+        <i class="js-close-plan-modal"></i>
+        <div class="container">
+            <div class="plan-coverage">
+                <h3 class="title title-m">Lista de Abrangência <small>Odontoker II</small></h3>
+                <div class="mt-2">
+                    <h4 class="title title-l">Minas Gerais</h4>
+                    <ul>
+                        <li>ARAGUARI</li>
+                        <li>ARAXÁ</li>
+                        <li>FRUTAL</li>
+                        <li>ITUIUTABA</li>
+                        <li>PATOS DE MINAS</li>
+                        <li>TUPACIGUARA</li>
+                        <li>UBERABA</li>
+                        <li>UBERLÂNDIA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <button id="" class="js-close-plan-modal plan-modal-off" aria-label="Fechar Lista de Abrangência" title="Sair da Lista de Abrangência">
+            <span class="sr-only">Sair da Lista de Abrangência</span>
+        </button>
+    </div>
 
     <div class="modal modal-plan-price" id="" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document"><i class="js-close-plan-price"></i>
@@ -605,6 +592,56 @@
             </div>
         </div>
     </div>
+
+    <section class="section-ratio-7 section-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="title">Lojas de Vendas</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5 mt-2">
+                    <div class="info">
+                        <h2><i class="icon icon-location"></i>Belo Horizonte</h2>
+                        <div class="info-detail mt-1">
+                            <h3>Funcionamento</h3>
+                            <p>De segunda à quinta-feira de 8h às 18h</p>
+                            <p>Sextas-feiras de 8h às 17h</p>
+                            <h3>Endereço</h3>
+                            <p>Rua dos Otoni, 742, Lojas 102, 106 e 107</p>
+                            <p>Santa Efigênia - Região Hospitalar</p>
+                            <p>Veja como é fácil chegar, <a href="https://goo.gl/maps/wRsnAngmRiq" target="_blank">clique aqui.</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 mt-2">
+                    <div class="info">
+                        <h2><i class="icon icon-location"></i>Contagem</h2>
+                        <div class="info-detail mt-1">
+                            <h3>Funcionamento</h3>
+                            <p>De segunda à quinta-feira de 8h às 18h</p>
+                            <p>Sextas-feiras de 8h às 17h</p>
+                            <h3>Endereço</h3>
+                            <p>Av. João César de Oliveira, 2308, Lojas 03 e 04</p>
+                            <p>Eldorado - Contagem</p>
+                            <p>Veja como é fácil chegar, <a href="https://goo.gl/maps/6qXPsC2rJU12" target="_blank">clique aqui.</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-12 col-md-6 col-lg-5 mt-2">
+                    <div class="info">
+                        <h2><i class="icon icon-phone"></i>Planos para Empresas</h2>
+                        <div class="info-detail mt-1">
+                            <span>(31) 3166 2369</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="newsletter">
        	<div class="container">

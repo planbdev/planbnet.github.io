@@ -13,7 +13,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
-<link href="./css/main.css" rel="stylesheet"></head>
+<link href="./css/main.css" rel="stylesheet"><link href="./css/blog.css" rel="stylesheet"></head>
 <body>
 
 <nav class="access" role=”navigation”>
@@ -48,7 +48,7 @@
                             <i class="js-close-search"></i>
                             <div class="container">
                                 <div class="access__aside-form">
-                                    <form class="" action="" method="">
+                                    <form id="" class="" action="" method="">
                                         <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
                                         <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
                                     </form>
@@ -76,7 +76,7 @@
 </nav>
 
 <header id="header" class="header">
-	<div class="container">
+    <div class="container">
 
         <div class="header__logo">
             <span class="sr-only">Vitallis</span>
@@ -88,20 +88,20 @@
                 <li tabindex="0">
                     <a href="#">Quem Somos</a>
                     <div>
-                        <a href="#">Fale Conosco</a>
-                        <a href="#">Perguntas Frequentes</a>
                         <a href="#">Grupo Keralty</a>
+                        <a href="#">Perguntas Frequentes</a>
+                        <a href="#">Fale Conosco</a>
+                        <a href="#">Ouvidoria</a>
+                        <a href="#" target="_blank">Trabalhe Conosco</a>
                     </div>
                 </li>
                 <li tabindex="0">
                     <a href="#">Planos</a>
                     <div>
-                        <a href="#">Individual Familiar</a>
-                        <a href="#">Vitalidade</a>
+                        <a href="#">Ouro e Prata</a>
+                        <a href="#">Vitallidade</a>
                         <a href="#">Plus</a>
-                        <a href="#">Empresarial</a>
-                        <a href="#">Coletivo por Adesão</a>
-                        <a href="#">Sanitas Exclusivo</a>
+                        <a href="#">Exclusivo</a>
                         <a href="#">Odontológico</a>
                     </div>
                 </li>
@@ -113,7 +113,8 @@
                         <a href="#">Keralty Centro Médico - Contagem</a>
                         <a href="#">Keralty Centro Médico - Venda Nova</a>
                         <a href="#">Keralty Centro Médico - Montes Claros</a>
-                        <a href="#">Laboratórios</a>
+                        <a href="#">Atendimento Presencial</a>
+                        <a href="#">Keralty Laboratório</a>
                     </div>
                 </li>
                 <li tabindex="0">
@@ -137,9 +138,6 @@
                 <li tabindex="0">
                     <a href="#">Blog</a>
                 </li>
-                <li tabindex="0">
-                    <a href="#">Contato</a>
-                </li>
             </ul>
         </nav>
 
@@ -150,7 +148,7 @@
             </a>
         </div>
 
-	</div>
+    </div>
 </header>
 
 <header id="header-handheld" class="header-handheld">
@@ -183,10 +181,11 @@
                             <li tabindex="0">
                                 <a href="#">Quem Somos</a><input type="checkbox">
                                 <div>
-                                    <a href="#">Fale Conosco</a>
-                                    <a href="#">Perguntas Frequentes</a>
                                     <a href="#">Grupo Keralty</a>
-                                    <a href="#">Trabalhe Conosco</a>
+                                    <a href="#">Perguntas Frequentes</a>
+                                    <a href="#">Fale Conosco</a>
+                                    <a href="#">Ouvidoria</a>
+                                    <a href="#" target="_blank">Trabalhe Conosco</a>
                                 </div>
                             </li>
                             <li tabindex="0">
@@ -207,11 +206,12 @@
                                     <a href="#">Keralty Centro Médico - Contagem</a>
                                     <a href="#">Keralty Centro Médico - Venda Nova</a>
                                     <a href="#">Keralty Centro Médico - Montes Claros</a>
-                                    <a href="#">Laboratórios</a>
+                                    <a href="#">Atendimento Presencial</a>
+                                    <a href="#">Keralty Laboratório</a>
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Procedimentos</a>
+                                <a href="#">Procedimentos</a><input type="checkbox">
                                 <div>
                                     <a href="#">Solicitar Autorização de Procedimento</a>
                                 </div>
@@ -230,9 +230,6 @@
                             </li>
                             <li tabindex="0">
                                 <a href="#">Blog</a>
-                            </li>
-                            <li tabindex="0">
-                                <a href="#">Contato</a>
                             </li>
                         </ul>
                     </nav>
@@ -263,32 +260,13 @@
                             </li>
                             <li class="access__menu-search">
                                 <a href="#" class="js-search"><i class="icon icon-search"></i>Busca</a>
+                                <input type="checkbox">
+                                <form id="" class="" action="" method="">
+                                    <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
+                                    <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
+                                </form>
                             </li>
                         </ul>
-                        <aside id="search-form" class="access__aside" role="search">
-                            <i class="js-close-search"></i>
-                            <div class="container">
-                                <div class="access__aside-form">
-                                    <form id="" class="" action="" method="">
-                                        <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
-                                        <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
-                                    </form>
-                                    <button id="" class="js-close-search access__aside-close" aria-label="Fechar Busca" title="Sair da Busca">
-                                        <span class="sr-only">Sair da Busca</span>
-                                    </button>
-                                    <div class="access__suggest">
-                                        <h3 class="subtitle"><span>Links rápidos</span></h3>
-                                        <nav>
-                                            <div><a href="#">Como lorem ipsum sit amet</a></div>
-                                            <div><a href="#">O que é consectetur adipisicing</a></div>
-                                            <div><a href="#">Para ullamco laboris</a></div>
-                                            <div><a href="#">Saiba fugiat nulla pariatur</a></div>
-                                            <div><a href="#">Como lorem ipsum sit</a></div>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
                     </nav>
                 </div>
             </div>
@@ -373,32 +351,18 @@
                         <div class="col-12 mt-4 mt-lg-0">
                             <div class="box">
                                 <div class="box-icon box-icon-text">
-                                    <h3>Download PressKit</h3>
-                                </div>
-                                <div class="box-body">
-                                    <div>
-                                        <h3>Lorem ipsum dolor sit</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                        <a href="#" target="_blank" class="btn-tp-2 btn-cl-3 btn-pd-1">Fazer Download</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <div class="box">
-                                <div class="box-icon box-icon-text">
                                     <h3>Contato Assessoria</h3>
                                 </div>
                                 <div class="box-body">
                                     <div>
-                                        <h3>Nome do responsável</h3>
-                                        <p>emaildocontato@email.com.br</p>
-                                        <p>+55 (31) 3333-9999</p>
-                                        <p>+55 (31) 99999-9999</p>
-                                        <h3>Nome do responsável</h3>
-                                        <p>emaildocontato@email.com.br</p>
-                                        <p>+55 (31) 3333-9999</p>
-                                        <p>+55 (31) 99999-9999</p>
+                                        <h3>Interface Comunicação</h3>
+                                        <p>(31) 3211-7505</p>
+
+                                        <h3>Liziane Soares</h3>
+                                        <p>liziane@interfacecomunicacao.com.br</p>
+
+                                        <h3>Isabella Antunes</h3>
+                                        <p>isabella@interfacecomunicacao.com.br</p>
                                     </div>
                                 </div>
                             </div>
@@ -502,6 +466,7 @@
                         <li><a href="#">Keralty Centro Médico - Montes Claros</a></li>
                         <li><a href="#">Atendimento Presencial</a></li>
                         <li><a href="#">Keralty Laboratório</a></li>
+                        <li><a href="#">Keralty Centro Oftalmológico</a></li>
                     </ul>
                 </nav>
                 <nav class="mt-2">
@@ -565,5 +530,5 @@
 		</div>
 	</div>
 </footer>
-<script type="text/javascript" src="./js/app.js"></script><script type="text/javascript" src="./js/main.js"></script></body>
+<script type="text/javascript" src="./js/app.js"></script><script type="text/javascript" src="./js/main.js"></script><script type="text/javascript" src="./js/blog.js"></script></body>
 </html>

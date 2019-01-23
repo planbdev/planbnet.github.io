@@ -520,6 +520,40 @@ var HIDDEN_CLASS = 'noscrolling';
     }
 })();
 
+// FORM FAIXA
+(function () {
+    if (document.querySelector('.form-faixa') != null) {
+        var n;
+        var j;
+
+        (function () {
+
+            var FAIXAS = document.querySelectorAll('.form-faixa');
+            var ACTIVE = 'active';
+            //const ACCORDION = document.getElementById('accordion-faixa');
+
+            for (n = 1; n <= FAIXAS.length; n++) {
+
+                for (j = 2; j <= 5; j++) {
+
+                    var FAIXA_TRIGGER = document.getElementById('button-local-' + n + '-' + j);
+
+                    if (FAIXA_TRIGGER != null) {
+                        (function () {
+                            var FAIXA_LOCAL = document.getElementById('local-' + n + '-' + j);
+
+                            FAIXA_TRIGGER.addEventListener('click', function (event) {
+                                FAIXA_LOCAL.classList.add(ACTIVE);
+                                return false;
+                            });
+                        })();
+                    }
+                }
+            }
+        })();
+    }
+})();
+
 function homeSlider() {
     var HOME_HERO_CNT = document.querySelector('.hero-home-carousel-cnt');
     if (HOME_HERO_CNT !== null) {

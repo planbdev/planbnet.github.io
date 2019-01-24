@@ -3,13 +3,13 @@
 <head>
 	<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin>
     <!--[if lte IE 9]>
-        <script src="../empresa/js/ie.lteIE9.js"></script>
+        <script src="../prestador/js/ie.lteIE9.js"></script>
     <![endif]-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Vitallis</title>
-    <link rel="icon" type="image/ico" href="../empresa/images/favicon.ico">
+    <link rel="icon" type="image/ico" href="../prestador/images/favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
@@ -23,9 +23,9 @@
                 <div class="access__item">
                     <nav>
                         <ul>
-                            <li class="access-active"><span>Cliente</span></li>
+                            <li class="access-active"><span>Prestador</span></li>
+                            <li><a href="#">Cliente</a></li>
                             <li><a href="#">Empresa</a></li>
-                            <li><a href="#">Prestador</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -48,7 +48,7 @@
                             <i class="js-close-search"></i>
                             <div class="container">
                                 <div class="access__aside-form">
-                                    <form class="" action="" method="">
+                                    <form id="" class="" action="" method="">
                                         <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
                                         <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
                                     </form>
@@ -76,7 +76,7 @@
 </nav>
 
 <header id="header" class="header">
-	<div class="container">
+    <div class="container">
 
         <div class="header__logo">
             <span class="sr-only">Vitallis</span>
@@ -88,41 +88,16 @@
                 <li tabindex="0">
                     <a href="#">Quem Somos</a>
                     <div>
-                        <a href="#">Fale Conosco</a>
-                        <a href="#">Perguntas Frequentes</a>
                         <a href="#">Grupo Keralty</a>
+                        <a href="#">Perguntas Frequentes</a>
+                        <a href="#">Fale Conosco</a>
+                        <a href="#">Ouvidoria</a>
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#">Planos</a>
+                    <a href="#">Programas de Saúde</a>
                     <div>
-                        <a href="#">Individual Familiar</a>
-                        <a href="#">Vitalidade</a>
-                        <a href="#">Plus</a>
-                        <a href="#">Empresarial</a>
-                        <a href="#">Coletivo por Adesão</a>
-                        <a href="#">Sanitas Exclusivo</a>
-                        <a href="#">Odontológico</a>
-                    </div>
-                </li>
-                <li tabindex="0">
-                    <a href="#">Unidades</a>
-                    <div>
-                        <a href="#">Hospital Keralty</a>
-                        <a href="#">Keralty Centro Médico - Centro</a>
-                        <a href="#">Keralty Centro Médico - Contagem</a>
-                        <a href="#">Keralty Centro Médico - Venda Nova</a>
-                        <a href="#">Keralty Centro Médico - Montes Claros</a>
-                        <a href="#">Laboratórios</a>
-                    </div>
-                </li>
-                <li tabindex="0">
-                    <a href="#">Procedimentos</a>
-                </li>
-                <li tabindex="0">
-                    <a href="#" class="active">Programas de Saúde</a>
-                    <div>
-                        <a href="#" class="active">Bebê Vitallis</a>
+                        <a href="#">Bebê Vitallis</a>
                         <a href="#">Leve Saúde</a>
                         <a href="#">Tratamento e Apoio da Obesidade</a>
                         <a href="#">Programa de Gerenciamento de Doenças</a>
@@ -132,10 +107,7 @@
                     </div>
                 </li>
                 <li tabindex="0">
-                    <a href="#">Blog</a>
-                </li>
-                <li tabindex="0">
-                    <a href="#">Contato</a>
+                    <a href="#" target="_blank">Notícias</a>
                 </li>
             </ul>
         </nav>
@@ -147,7 +119,7 @@
             </a>
         </div>
 
-	</div>
+    </div>
 </header>
 
 <header id="header-handheld" class="header-handheld">
@@ -161,9 +133,9 @@
                     <div class="access__item">
                         <nav>
                             <ul>
-                                <li class="access-active"><span>Cliente</span></li>
+                                <li class="access-active"><span>Prestador</span></li>
+                                <li><a href="#">Cliente</a></li>
                                 <li><a href="#">Empresa</a></li>
-                                <li><a href="#">Prestador</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -180,35 +152,11 @@
                             <li tabindex="0">
                                 <a href="#">Quem Somos</a><input type="checkbox">
                                 <div>
-                                    <a href="#">Fale Conosco</a>
-                                    <a href="#">Perguntas Frequentes</a>
                                     <a href="#">Grupo Keralty</a>
-                                    <a href="#">Trabalhe Conosco</a>
+                                    <a href="#">Perguntas Frequentes</a>
+                                    <a href="#">Fale Conosco</a>
+                                    <a href="#">Ouvidoria</a>
                                 </div>
-                            </li>
-                            <li tabindex="0">
-                                <a href="#">Planos</a><input type="checkbox">
-                                <div>
-                                    <a href="#">Ouro e Prata</a>
-                                    <a href="#">Vitalidade</a>
-                                    <a href="#">Plus</a>
-                                    <a href="#">Exclusivo</a>
-                                    <a href="#">Odontológico</a>
-                                </div>
-                            </li>
-                            <li tabindex="0">
-                                <a href="#">Unidades</a><input type="checkbox">
-                                <div>
-                                    <a href="#">Hospital Keralty</a>
-                                    <a href="#">Keralty Centro Médico - Centro</a>
-                                    <a href="#">Keralty Centro Médico - Contagem</a>
-                                    <a href="#">Keralty Centro Médico - Venda Nova</a>
-                                    <a href="#">Keralty Centro Médico - Montes Claros</a>
-                                    <a href="#">Laboratórios</a>
-                                </div>
-                            </li>
-                            <li tabindex="0">
-                                <a href="#">Procedimentos</a>
                             </li>
                             <li tabindex="0">
                                 <a href="#">Programas de Saúde</a><input type="checkbox">
@@ -223,10 +171,7 @@
                                 </div>
                             </li>
                             <li tabindex="0">
-                                <a href="#">Blog</a>
-                            </li>
-                            <li tabindex="0">
-                                <a href="#">Contato</a>
+                                <a href="#" target="_blank">Notícias</a><input type="checkbox">
                             </li>
                         </ul>
                     </nav>
@@ -257,32 +202,13 @@
                             </li>
                             <li class="access__menu-search">
                                 <a href="#" class="js-search"><i class="icon icon-search"></i>Busca</a>
+                                <input type="checkbox">
+                                <form id="" class="" action="" method="">
+                                    <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
+                                    <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
+                                </form>
                             </li>
                         </ul>
-                        <aside id="search-form" class="access__aside" role="search">
-                            <i class="js-close-search"></i>
-                            <div class="container">
-                                <div class="access__aside-form">
-                                    <form id="" class="" action="" method="">
-                                        <input type="search" aria-label="Buscar em vitallis.com.br" placeholder="Buscar em vitallis.com.br" autocorrect="off" autocapitalize="off" autocomplete="off">
-                                        <input class="icon icon-search" type="submit" aria-label="Buscar" title="Pesquisar">
-                                    </form>
-                                    <button id="" class="js-close-search access__aside-close" aria-label="Fechar Busca" title="Sair da Busca">
-                                        <span class="sr-only">Sair da Busca</span>
-                                    </button>
-                                    <div class="access__suggest">
-                                        <h3 class="subtitle"><span>Links rápidos</span></h3>
-                                        <nav>
-                                            <div><a href="#">Como lorem ipsum sit amet</a></div>
-                                            <div><a href="#">O que é consectetur adipisicing</a></div>
-                                            <div><a href="#">Para ullamco laboris</a></div>
-                                            <div><a href="#">Saiba fugiat nulla pariatur</a></div>
-                                            <div><a href="#">Como lorem ipsum sit</a></div>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </aside>
                     </nav>
                 </div>
             </div>
@@ -301,16 +227,13 @@
                 <a href="#"><span>Primeiro Acesso</span></a>
             </li>
             <li>
-                <a href="#"><span>Guia Médico</span></a>
+                <a href="#"><span>Faturamento Web</span></a>
             </li>
             <li>
-                <a href="#"><span>Marcar Consulta</span></a>
+                <a href="#"><span>Relação Geral de Glosas</span></a>
             </li>
             <li>
-                <a href="#"><span>Solicitar Autorização</span></a>
-            </li>
-            <li>
-                <a href="#"><span>Boletos</span></a>
+                <a href="#"><span>Autorização de Procedimentos</span></a>
             </li>
         </ul>
     </div>
@@ -318,9 +241,9 @@
 
 <main class="main">
 
-    <section class="hero-page" style="background-image:url(../empresa/images/img-top-melhor-idade.jpg);">
+    <section class="hero-page" style="background-image:url(../prestador/images/img-top-gerenciamento-doencas.jpg);">
         <div class="container">
-            <h1 class="hero-page-title">Programa da Melhor Idade</h1>
+            <h1 class="hero-page-title">Programa de Gerenciamento de Doenças</h1>
         </div>
     </section>
 
@@ -329,7 +252,7 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><i>/</i><a href="#">Programas de Saúde</a></li>
-                <li><i>/</i><span>Programa da Melhor Idade</span></li>
+                <li><i>/</i><span>Programa de Gerenciamento de Doenças</span></li>
             </ul>
         </div>
     </div>
@@ -354,8 +277,8 @@
                 </div>
                 <div class="col-12 col-lg-6 order-lg-first d-flex align-content-between flex-wrap">
                     <div>
-                        <p class="text">Envelhecer faz parte da vida, mas envelhecer de forma saudável e ativa é possível e está intimamente ligada a um estilo de vida que inclui atividade física regular e, em paralelo, escolhas sábias de alimentos e cuidados especializados e de qualidade.</p>
-                        <p class="text">A Vitallis incentiva este envelhecimento e por isso esse programa, que é gratuito, foi criado.</p>
+                        <p class="text">As doenças crônicas causam preocupação, por isso oferecemos gratuitamente o Programa de Gerenciamento de Doenças, que tem como foco atuar junto aos clientes portadores de doenças crônicas, como hipertensão arterial, diabetes mellitus, doenças oncológicas, doença pulmonar obstrutiva crônica, insuficiência cardíaca e renal, dentre outras.</p>
+                        <p class="text">Com a proposta de acompanhamento regular destas doenças, promove o controle e previne os agravos à saúde.</p>
                     </div>
                     <div class="contact mt-2">
                         <div class="contact-icon">
@@ -387,7 +310,7 @@
                                 <h2>Público</h2>
                             </div>
                             <div>
-                                <p>Clientes que possuem idade <br>igual ou superior a 59 anos.</p>
+                                <p>Clientes portadores de <br>doenças crônicas</p>
                             </div>
                         </div>
                     </div>
@@ -405,10 +328,8 @@
                             </div>
                             <div>
                                 <p>Consulta médica regular</p>
-                                <p>Acompanhamento de enfermagem regularmente</p>
-                                <p>Consultas individuais</p>
-                                <p>Visitas domiciliares para acamados</p>
-                                <p>Telemonitoramento</p>
+                                <p>Acompanhamento de enfermagem</p>
+                                <p>Visita domiciliar ou por tele monitoramento</p>
                             </div>
                         </div>
                     </div>
@@ -425,8 +346,9 @@
                                 <h2>Profissionais</h2>
                             </div>
                             <div>
-                                <p>Médicos geriatras</p>
+                                <p>Médicos</p>
                                 <p>Enfermeiros</p>
+                                <p>Serviço Social</p>
                             </div>
                         </div>
                     </div>
@@ -443,14 +365,7 @@
                                 <h2>Abrangência</h2>
                             </div>
                             <div>
-                                <p>Belo Horizonte</p>
-                                <p>Betim</p>
-                                <p>Contagem</p>
-                                <p>Nova Lima</p>
-                                <p>Ribeirão das Neves</p>
-                                <p>Sabará</p>
-                                <p>Santa Luzia</p>
-                                <p>Vespasiano</p>        
+                                <p>Belo Horizonte e Contagem</p>
                             </div>
                         </div>
                     </div>
@@ -459,95 +374,12 @@
         </div>
     </section>
 
-    <section class="section-ratio-7">
+    <section class="section-ratio-11 section-filter section-diferenciais" style="background-image:url(../prestador/images/temp-img-placeholder.jpg);">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="title title-m">Inscreva-se para participar</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="form">
-                        <form action="" name="">
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-4 mt-2">
-                                    <label for="nome">Nome Completo <i>&#42;</i></label>
-                                    <input type="text" class="" id="nome" required>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mt-2">
-                                    <label for="plano">Plano</label>
-                                    <select class="" id="plano">
-                                        <option selected>Selecione</option>
-                                        <option value="1">Vitallis Plus</option>
-                                        <option value="2">Outro/Prata</option>
-                                        <option value="3">Vitallis Plus</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mt-2">
-                                    <label for="plano">Etapas do programa</label>
-                                    <select class="" id="plano">
-                                        <option selected>Selecione</option>
-                                        <option value="1">G.A.T.O.</option>
-                                        <option value="2">Pós-bariátrico</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mt-2">
-                                    <label for="carteirinha">N&#186; da Carteirinha ou CPF <span class="js-info-popup">i</span> <i>&#42;</i>
-                                        <div class="form-info">
-                                            <img src="images/temp-carteirinha-exemplo.jpg">
-                                        </div>
-                                    </label>
-                                    <input type="text" class="" id="carteirinha" required>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mt-2">
-                                    <label for="email">E-mail <i>&#42;</i></label>
-                                    <input type="email" class="" id="email" required>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4  mt-2">
-                                    <label for="telefone">Telefone <i>&#42;</i></label>
-                                    <input type="tel" class="" id="telefone" placeholder="ex: (00) 00000-0000">
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mt-2">
-                                    <label for="rua">Rua</label>
-                                    <input type="text" class="" id="rua">
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-2 mt-2">
-                                    <label for="numero">Número</label>
-                                    <input type="text" class="" id="numero">
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-6 mt-2">
-                                    <label for="complemento">Complemento</label>
-                                    <input type="text" class="" id="complemento">
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 mt-2">
-                                    <label for="bairro">Bairro</label>
-                                    <input type="text" class="" id="bairro">
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-2 mt-2">
-                                    <label for="estado">Estado</label>
-                                    <select class="" id="estado">
-                                        <option selected>UF</option>
-                                        <option value="1">AC</option>
-                                        <option value="2">AL</option>
-                                        <option value="3">AP</option>
-                                        <option value="4">AM</option>
-                                        <option value="5">BA</option>
-                                        <option value="6">CE</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-6 mt-2">
-                                    <label for="cidade">Cidade</label>
-                                    <input type="text" class="" id="cidade">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <button class="btn-tp-form btn-cl-1 btn-pd-1 mt-3 ml-sm-auto" type="submit">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-9 col-md-7 col-lg-5 text-center">
+                    <h2 class="title text-inverse">Indique nosso programa para seus clientes</h2>
+                    <p class="text text-inverse">Se nosso Programa da Promoção da Saúde acima atende as necessidades do seu cliente, não deixe de indicá-lo! </p>
                 </div>
             </div>
         </div>

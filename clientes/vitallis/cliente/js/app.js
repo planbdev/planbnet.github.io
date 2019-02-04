@@ -4362,11 +4362,13 @@ var HIDDEN_CLASS = 'noscrolling';
         var removeExpandedClass = function removeExpandedClass() {
             TOGGLE_MENU.setAttribute('aria-expanded', 'false');
             HEADER_MENU.classList.remove(EXPANDED_CLASS);
+            return false;
         };
 
         var insertExpandedClass = function insertExpandedClass() {
             TOGGLE_MENU.setAttribute('aria-expanded', 'true');
             HEADER_MENU.classList.add(EXPANDED_CLASS);
+            return false;
         };
 
         var TOGGLE_MENU = document.querySelector('.header__toggle');

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -585,16 +585,11 @@ module.exports = function (css) {
 
 /***/ }),
 /* 2 */,
-/* 3 */,
-/* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(9);
+var content = __webpack_require__(4);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -615,7 +610,7 @@ if(content.locals) module.exports = content.locals;
 if(false) {}
 
 /***/ }),
-/* 9 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin

@@ -358,19 +358,12 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12 col-lg-3 col-xl-2 mb-2">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <fieldset>
-                                                        <label for="plano-sim"><input type="radio" class="" id="plano-sim" name="templano"> Sim</label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-12">
-                                                    <fieldset>
-                                                        <label for="plano-nao"><input type="radio" class="" id="plano-nao" name="templano"> Não</label>
-                                                    </fieldset>
-                                                </div>
-                                            </div>
+                                        <div class="col-12 col-lg-4 col-xl-3 mb-2">
+                                            <label for="plano">Selecione</label>
+                                            <select class="" id="plano">
+                                                <option  value="1" selected>Não</option>
+                                                <option value="2">Sim</option>
+                                            </select>
                                         </div>
                                         <div class="col-12 col-lg-7">
                                             <label for="plano-nome">Nome do Plano de Saúde</label>
@@ -385,21 +378,14 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12 col-lg-3 col-xl-2 mb-2">
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <fieldset>
-                                                        <label for="afastado-sim"><input type="radio" class="" id="afastado-sim" name="afastados"> Sim</label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-12">
-                                                    <fieldset>
-                                                        <label for="afastado-nao"><input type="radio" class="" id="afastado-nao" name="afastados"> Não</label>
-                                                    </fieldset>
-                                                </div>
-                                            </div>
+                                        <div class="col-12 col-lg-4 col-xl-3 mb-2">
+                                            <label for="afastado">Selecione</label>
+                                            <select class="" id="afastado">
+                                                <option  value="1" selected>Não</option>
+                                                <option value="2">Sim</option>
+                                            </select>
                                         </div>
-                                        <div class="col-12 col-lg-7">
+                                        <div class="col-12 col-lg-8">
                                             <label for="afastado-numero">Quantos?</label>
                                             <input type="text" class="" id="afastado-numero">
                                         </div>
@@ -417,23 +403,16 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6 mt-2">
                                             <div class="row">
-                                                <div class="col-12 mb-lg-2">
+                                                <div class="col-12">
                                                     <label><strong>A empresa paga a mensalidade para os funcionários?</strong></label>
                                                 </div>
-                                                <div class="col-12 col-lg-4 col-xl-3">
-                                                    <fieldset>
-                                                        <label for="pag-parcial"><input type="radio" class="" id="pag-parcial" name="pagamento"> Parcial</label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-12 col-lg-4 col-xl-3">
-                                                    <fieldset>
-                                                        <label for="pag-total"><input type="radio" class="" id="pag-total" name="pagamento"> Total</label>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-12 col-lg-4 col-xl-3">
-                                                    <fieldset>
-                                                        <label for="pag-nao"><input type="radio" class="" id="pag-nao" name="pagamento"> Não</label>
-                                                    </fieldset>
+                                                <div class="col-12 col-lg-5 col-xl-4">
+                                                    <label for="pag">Selecione</label>
+                                                    <select class="" id="pag">
+                                                        <option  value="1" selected>Não</option>
+                                                        <option value="2">Total</option>
+                                                        <option value="3">Parcial</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>

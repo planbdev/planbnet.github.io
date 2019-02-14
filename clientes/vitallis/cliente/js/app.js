@@ -4709,6 +4709,105 @@ var HIDDEN_CLASS = 'noscrolling';
     }
 })();
 
+// SHOW SPECIALTIES FROM MEDICAL GUIDE
+(function () {
+    var FORM_MEDICAL_GUIDE = document.querySelector('.form-medical-guide');
+
+    if (FORM_MEDICAL_GUIDE != null) {
+        var SPECIALTIES_OPEN = document.querySelectorAll('.js-specialties');
+        var SPECIALTIES_CLOSE = document.querySelectorAll('.js-close-specialties');
+
+        SPECIALTIES_OPEN.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                var DATA_LINK = this.getAttribute('data-link');
+                var SPECIALTY = document.querySelector('#specialties-' + DATA_LINK);
+
+                if (!SPECIALTY.classList.contains(OPEN_CLASS)) {
+                    SPECIALTY.classList.add(OPEN_CLASS);
+                    return false;
+                }
+                return false;
+            });
+        });
+
+        SPECIALTIES_CLOSE.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                var DATA_LINK = this.getAttribute('data-link');
+                var SPECIALTY = document.querySelector('#specialties-' + DATA_LINK);
+
+                SPECIALTY.classList.remove(OPEN_CLASS);
+
+                return false;
+            });
+        });
+
+        var PLANS_OPEN = document.querySelectorAll('.js-plans');
+        var PLANS_CLOSE = document.querySelectorAll('.js-close-plans');
+
+        PLANS_OPEN.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                var DATA_LINK = this.getAttribute('data-link');
+                var PLAN = document.querySelector('#plans-' + DATA_LINK);
+
+                if (!PLAN.classList.contains(OPEN_CLASS)) {
+                    PLAN.classList.add(OPEN_CLASS);
+                    return false;
+                }
+                return false;
+            });
+        });
+
+        PLANS_CLOSE.forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                var DATA_LINK = this.getAttribute('data-link');
+                var PLAN = document.querySelector('#plans-' + DATA_LINK);
+
+                PLAN.classList.remove(OPEN_CLASS);
+
+                return false;
+            });
+        });
+    }
+})();
+
+// SHOW / HIDE FORM ADVANCED
+(function () {
+    var FORM_ADVANCED = document.querySelector('.form-advanced');
+
+    if (FORM_ADVANCED != null) {
+        var removeExpandedClass = function removeExpandedClass() {
+            TOGGLE_FORM_ADVANCED.setAttribute('aria-expanded', 'false');
+            FORM_ADVANCED.classList.remove(EXPANDED_CLASS);
+            return false;
+        };
+
+        var insertExpandedClass = function insertExpandedClass() {
+            TOGGLE_FORM_ADVANCED.setAttribute('aria-expanded', 'true');
+            FORM_ADVANCED.classList.add(EXPANDED_CLASS);
+            return false;
+        };
+
+        var TOGGLE_FORM_ADVANCED = document.querySelector('.js-advanced');
+        var EXPANDED_CLASS = 'expanded';
+        TOGGLE_FORM_ADVANCED.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (FORM_ADVANCED.classList.contains(EXPANDED_CLASS)) {
+                removeExpandedClass();
+            } else {
+                insertExpandedClass();
+            }
+        });
+    }
+})();
+
 function homeSlider() {
     var HOME_HERO_CNT = document.querySelector('.hero-home-carousel-cnt');
     if (HOME_HERO_CNT !== null) {

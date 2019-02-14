@@ -302,7 +302,7 @@
 
 <main class="main">
 
-    <section class="hero-page" style="background-image:url(../cliente/images/img-top-guia-medico.jpg);">
+    <section class="hero-page hero-page-mini" style="background-image:url(../cliente/images/img-top-guia-medico.jpg);">
         <div class="container">
             <h1 class="hero-page-title">Guia Médico</h1>
         </div>
@@ -317,96 +317,89 @@
         </div>
     </div>
 
-    <section class="section-ratio-9">
+    <section class="section-ratio-5">
         <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col col-lg-10 col-xl-8 text-center">
-                    <h2 class="title">Encontre a melhor rede de atendimento em saúde para você</h2>
+            <div class="row justify-content-md-center text-center">
+                <div class="col-12 col-lg-7 col-xl-6">
+                    <h2 class="title title-color">Encontre a melhor rede de atendimento em saúde para você</h2>
+                </div>
+                <div class="col-12 col-lg-10 col-xl-8">
                     <p class="text">Com o nosso Guia Médico Online, você pode obter informações atualizadas sobre a nossa rede credenciada que conta com: hospitais, clínicas, laboratórios, médicos e profissionais de saúde. Outro benefício é que, se um novo prestador for credenciado ou houver ampliações em sua rede, você ficará sempre informado.</p>
                 </div>
             </div>
-            <div class="row mt-1">
-                <div class="col-12 col-md-7 col-lg-8">
-                    <div class="form">
-                        <form action="" name="">
+            <div class="form form-medical-guide">
+                <form action="" name="">
+                    <div class="row mt-1 justify-content-between">
+                        <div class="col col-12 mt-2">
+                            <label>Se você é cliente, digite o código do cartão:</label>
+                        </div>
+                        <div class="col col-12 col-lg-4">
+                            <label for="codigo">Código do beneficiário <span class="js-info-popup">i</span>
+                                <div class="form-info">
+                                    <img src="images/temp-carteirinha-exemplo.jpg">
+                                </div>
+                            </label>
+                            <input type="text" class="" id="codigo">
+                        </div>
+                        <div class="col col-12 col-lg-4"></div>
+                        <div class="col col-12 col-lg-4"></div>
+                        <div class="col col-12 col-lg-4 mt-2">
+                            <label for="rede">Tipo de Rede</label>
+                            <select class="" id="rede">
+                                <option value="" selected>Todas</option>
+                                <option value="">Rede Estadual</option>
+                                <option value="">Rede Municipal</option>
+                                <option value="">Rede Nacional</option>
+                            </select>
+                        </div>
+                        <div class="col col-12 col-lg-4 mt-2">
+                            <label for="plano">Plano</label>
+                            <select class="" id="plano">
+                                <option value="" selected>Todos</option>
+                                <option value="">Vitallidade</option>
+                                <option value="">Plus</option>
+                                <option value="">Exclusivo</option>
+                            </select>
+                        </div>
+                        <div class="col col-12 col-lg-4 mt-2">
+                            <label for="plano">Tipo de Prestador</label>
+                            <select class="" id="plano">
+                                <option value="" selected>Todos</option>
+                                <option value="">Médico</option>
+                                <option value="">Clínica</option>
+                                <option value="">Hospital</option>
+                            </select>
+                        </div>
+                        <div class="col col-12 col-lg-4 mt-2">
+                            <label for="especialidade">Especialidade</label>
+                            <select class="" id="especialidade">
+                                <option selected>Todas</option>
+                                <option value="">Dermatologia</option>
+                                <option value="">Endocrinologia e Metabologia</option>
+                                <option value="">Gastroenterologia</option>
+                            </select>
+                        </div>
+                        <div class="col col-12 col-lg-4 mt-2">
+                            <label for="estado">Estado</label>
+                            <select class="" id="estado">
+                                <option value="" selected>Todos</option>
+                                <option value="">Acre</option>
+                                <option value="">Alagoas</option>
+                                <option value="">Amapá</option>
+                            </select>
+                        </div>
+                        <div class="col col-12 col-lg-4 mt-2">
+                            <label for="cidade">Cidade</label>
+                            <select class="" id="cidade">
+                                <option value="" selected>Todas</option>
+                                <option value="">Cidade A</option>
+                                <option value="">Cidade B</option>
+                                <option value="">Cidade C</option>
+                            </select>
+                        </div>
+                        <div class="form-advanced col-12">
                             <div class="row">
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="rede">Tipo de Rede <i>&#42;</i></label>
-                                    <select class="" id="rede">
-                                        <option value="" selected>Todas as Redes</option>
-                                        <option value="">Rede Estadual</option>
-                                        <option value="">Rede Municipal</option>
-                                        <option value="">Rede Nacional</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="plano">Plano <i>&#42;</i></label>
-                                    <select class="" id="plano">
-                                        <option value="" selected>Todas os Planos</option>
-                                        <option value="">Vitallidade</option>
-                                        <option value="">Plus</option>
-                                        <option value="">Exclusivo</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="nome">Nome do Prestador </label>
-                                    <input type="text" class="" id="nome">
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="plano">Tipo de Prestador <i>&#42;</i></label>
-                                    <select class="" id="plano">
-                                        <option value="" selected>Todos</option>
-                                        <option value="">Médico</option>
-                                        <option value="">Clínica</option>
-                                        <option value="">Hospital</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="estado">Estado <i>&#42;</i></label>
-                                    <select class="" id="estado">
-                                        <option value="" selected>Todos</option>
-                                        <option value="">Acre</option>
-                                        <option value="">Alagoas</option>
-                                        <option value="">Amapá</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="cidade">Cidade <i>&#42;</i></label>
-                                    <select class="" id="cidade">
-                                        <option value="" selected>Todas</option>
-                                        <option value="">Cidade A</option>
-                                        <option value="">Cidade B</option>
-                                        <option value="">Cidade C</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="bairro">Bairro </label>
-                                    <select class="" id="cidade">
-                                        <option value="" selected>Todos</option>
-                                        <option value="">Bairro A</option>
-                                        <option value="">Bairro B</option>
-                                        <option value="">Bairro C</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="graduacao">Graduação </label>
-                                    <select class="" id="graduacao">
-                                        <option value="" selected>Independente</option>
-                                        <option value="">Graduação A</option>
-                                        <option value="">Graduação B</option>
-                                        <option value="">Graduação C</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
-                                    <label for="especialidade">Especialidade</label>
-                                    <select class="" id="especialidade">
-                                        <option selected>Todas</option>
-                                        <option value="">Dermatologia</option>
-                                        <option value="">Endocrinologia e Metabologia</option>
-                                        <option value="">Gastroenterologia</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-lg-6 mt-2">
+                                <div class="col col-12 col-lg-4 mt-2">
                                     <label for="regiao">Região</label>
                                     <select class="" id="regiao">
                                         <option value="" selected>Todas</option>
@@ -415,71 +408,1669 @@
                                         <option value="">Regiao C</option>
                                     </select>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 col-lg-6 mt-1">
-                                    <fieldset class="mt-3">
-                                        <label for="prestador"><input type="checkbox" class="" id="prestador" name=""> <small>Somente Prestadores Descredenciados / a Descredenciar</small></label>
-                                    </fieldset>
+                                <div class="col col-12 col-lg-4 mt-2">
+                                    <label for="nome">Nome do Prestador</label>
+                                    <input type="text" class="" id="nome">
                                 </div>
-                                <div class="col-12 col-lg-6 mt-1">
-                                    <div class="d-flex">
-                                        <div class="d-flex ml-sm-auto">
-                                            <a href="#" class="btn-tp-form btn-cl-1 btn-pd-1 mt-3 mr-1">Listar</a>
-                                            <button class="btn-tp-form btn-cl-1 btn-pd-1 mt-3" type="submit">Imprimir</button>
+                                <div class="col col-12 col-lg-4 mt-2">
+                                    <label for="graduacao">Graduação</label>
+                                    <select class="" id="graduacao">
+                                        <option value="" selected>Independente</option>
+                                        <option value="">Graduação A</option>
+                                        <option value="">Graduação B</option>
+                                        <option value="">Graduação C</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 mt-2">
+                            <div class="row justify-content-center">
+                                <div class="col col-12 col-sm-8 col-lg-md-6 col-lg-4 d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn-link mt-2 js-advanced">Busca Avançada</a>
+                                    <button type="button" class="btn-tp-4 btn-cl-1 btn-pd-1 mt-2">Listar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="result-guide ml-xl-2 mr-xl-2 mt-4"><hr>
+                <div class="row mt-2">
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>
+                                <h2>
+                                    <small>Clínica:</small>
+                                    <strong>A & E Centro de Medicina Avançada</strong>
+                                    <small>A & E Centro de Medicina Avançada LTDA - CNPJ: 14.754.952/0001-05</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-1" data-link="1" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-1" data-link="1" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Praça Coronel Pessoa, 89 - sl 803 e 804, Ed. Misael Tavares</p>
+                                            <p>Centro</p>
+                                            <p>45653-410 - Ilhéus - BA</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (73)3633-7173 / (73)3086-0086</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=PRACA%20CORONEL%20PESSOA,%2089%20-%20SL%20803%20E%20804,%20ED.%20MISAEL%20TAVARES+ILHEUS" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+
+                        <div id="specialties-1" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="1"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>A & E Centro de Medicina Avançada</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>GINECOLOGIA E OBSTETRICIA</li>
+                                            <li>RADIOLOGIA E DIAGNOSTICO POR IMAGEM</li>
+                                            <li>ULTRASSONOGRAFIA GERAL</li>  
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="1" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-1" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="1"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>A & E Centro de Medicina Avançada</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT XX</td>
+                                                    <td>INTEGRAL XX</td>
+                                                    <td>478202170</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT XX</td>
+                                                    <td>INTEGRAL XX</td>
+                                                    <td>478202170</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>SCS - T00170</td>
+                                                    <td>PLANO INDIV. MEDICO PRATA AGREG. C/OPC 123&nbsp;</td>
+                                                    <td>T00170</td>     
+                                                    <td>Individual / Familiar</td>  
+                                                    <td>Ativo (comercialização suspensa)</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>SCS - T00170</td>
+                                                    <td>PLANO INDIV. MEDICO PRATA AGREG. C/OPC 123&nbsp;</td>
+                                                    <td>T00170</td>     
+                                                    <td>Individual / Familiar</td>  
+                                                    <td>Ativo (comercialização suspensa)</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>SCS - T00170</td>
+                                                    <td>PLANO INDIV. MEDICO PRATA AGREG. C/OPC 123&nbsp;</td>
+                                                    <td>T00170</td>     
+                                                    <td>Individual / Familiar</td>  
+                                                    <td>Ativo (comercialização suspensa)</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>PLUS II ENF</td>
+                                                    <td>PLUS II ENFERMARIA</td>
+                                                    <td>481326180</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>PLUS II ENF</td>
+                                                    <td>PLUS II ENFERMARIA</td>
+                                                    <td>481326180</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="1" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>
+                                <h2>
+                                    <small>Clínica:</small>
+                                    <strong>A Clínica Opus Medicina</strong>
+                                    <small>A Clínica Opus Medicina LTDA - ME - CNPJ: 04.958.343/0001-14</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-2" data-link="2" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-2" data-link="2" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Avenida São João, 570, sl 44</p>
+                                            <p>Jardim Esplanada</p>
+                                            <p>12242-840 - São José dos Campos - SP</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (12)3922-3320</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=AVENIDA%20SAO%20JOAO,%20570,%20%20SL%2044+SAO%20JOSE%20DOS%20CAMPOS" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-2" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="2"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>A Clínica Opus Medicina</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>OTORRINOLARINGOLOGIA</li>
+                                            <li>CLINICA MEDICA</li>
+                                            <li>AUDIOMETRIA DE TRONCO CEREBRAL (BERA)</li>
+                                            <li>ELETROCARDIOGRAMA ECG</li>
+                                            <li>IMPEDANCIOMETRIA</li>
+                                            <li>VIDEO FARINGO LARINGOSCOPIA</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="2" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-2" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="2"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>A Clínica Opus Medicina</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT XX</td>
+                                                    <td>INTEGRAL XX</td>
+                                                    <td>478202170</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT XX</td>
+                                                    <td>INTEGRAL XX</td>
+                                                    <td>478202170</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>SCS - T00170</td>
+                                                    <td>PLANO INDIV. MEDICO PRATA AGREG. C/OPC 123&nbsp;</td>
+                                                    <td>T00170</td>     
+                                                    <td>Individual / Familiar</td>  
+                                                    <td>Ativo (comercialização suspensa)</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>SCS - T00170</td>
+                                                    <td>PLANO INDIV. MEDICO PRATA AGREG. C/OPC 123&nbsp;</td>
+                                                    <td>T00170</td>     
+                                                    <td>Individual / Familiar</td>  
+                                                    <td>Ativo (comercialização suspensa)</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>SCS - T00170</td>
+                                                    <td>PLANO INDIV. MEDICO PRATA AGREG. C/OPC 123&nbsp;</td>
+                                                    <td>T00170</td>     
+                                                    <td>Individual / Familiar</td>  
+                                                    <td>Ativo (comercialização suspensa)</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>PLUS II ENF</td>
+                                                    <td>PLUS II ENFERMARIA</td>
+                                                    <td>481326180</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>PLUS II ENF</td>
+                                                    <td>PLUS II ENFERMARIA</td>
+                                                    <td>481326180</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="2" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>                                    
+                                <h2>
+                                    <small>Clínica:</small>
+                                    <strong>A. Fratezi Serviços de Saúde S/S LTDA</strong>
+                                    <small>CNPJ: 23.019.715/0001-91</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-3" data-link="3" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-3" data-link="3" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Rua Bom Jesus do Pirapora, n 322</p>
+                                            <p>Vila Vianelo</p>
+                                            <p>13207-270 - Jundiaí - SP</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (11)4521-0883</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=RUA%20R%20BOM%20JESUS%20DO%20PIRAPORA,%20N%C2%B0%20322+JUNDIAI" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-3" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="3"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>A. Fratezi Serviços de Saúde</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>ANGIOLOGIA</li>
+                                            <li>CIRURGIA VASCULAR</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="3" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-3" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="3"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>A. Fratezi Serviços de Saúde</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="3" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>
+                                <h2>
+                                    <small>Laboratório:</small>
+                                    <strong>ACIL - Análises Clínicas Ipatinga</strong>
+                                    <small>ACIL - Análises Clínicas Ipatinga LTDA CNPJ: 19.613.124/0001-70</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-4" data-link="4" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-4" data-link="4" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+
+                                    <div class="result-guide-graduate mt-2">
+                                        <div class="form-legend">
+                                            <ul>
+                                                <li>
+                                                    <img src="images/icon-ans-acreditacao.jpg">
+                                                    <p>Programa de Acreditação</p>
+                                                </li>
+                                                <li>
+                                                    <img src="images/icon-ans-entidades-gestoras.jpg">
+                                                    <p>Certificações de Entidades Gestoras de Outros Programas de Qualidade</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Rua Itajubá, 195</p>
+                                            <p>Centro</p>
+                                            <p>35160-035 - Ipatinga - MG</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (31)3801-1950 / (31)3822-1980 / (31)3801-1953</p>
+                                            <p><a href="#" target="_blank">http://www.laboracil.com.br</a></p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=RUA%20ITAJUBA,%20195+IPATINGA" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Avenida JK, 85 Loja A</p>
+                                            <p>Centro</p>
+                                            <p>Ipatinga - MG</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (31)3240-1556</p>
+                                            <p><a href="#" target="_blank">http://www.laboracil.com.br</a></p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=AVENIDA%20JK,85%20LOJA%20A+BELO%20ORIENTE" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Pouse Alegre, 32</p>
+                                            <p>São José</p>
+                                            <p>35198000 - Ipaba - MG</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (31)3327-1447</p>
+                                            <p><a href="#" target="_blank">http://www.laboracil.com.br</a></p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=POUSO%20ALEGRE,32+IPABA" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-4" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="4"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>ACIL - Análises Clínicas Ipatinga</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>LABORATORIO</li>
+                                            <li>ANATOMIA PATOLOGICA E CITOPATOLOGIA</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="4" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-4" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="4"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>ACIL - Análises Clínicas Ipatinga</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="4" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>                                    
+                                <h2>
+                                    <small>Clínica:</small>
+                                    <strong>Acolher Psicologia e Saúde</strong>
+                                    <small>ACOLHER PSICOLOGIA E SAUDE LTDA ME CNPJ: 07.178.500/0001-67</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-5" data-link="5" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-5" data-link="5" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Rua Basileu Pereira Guimaraes, 291</p>
+                                            <p>Angola</p>
+                                            <p>32604-192 - Betim - MG</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (31)3594-4731</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=RUA%20BASILEU%20PEREIRA%20GUIMARAES,%20291+BETIM" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-5" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="5"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>Acolher Psicologia e Saúde</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>FONOAUDIOLOGIA</li>
+                                            <li>NUTRICAO</li>
+                                            <li>PEDIATRIA</li>
+                                            <li>PSICOLOGIA
+                                                <ul>
+                                                    <li>Gabriela Helen Fernandes (CRP-MG 38482)</li>
+                                                    <li>Sandra de Almeida (CRP-MG 31476)</li>
+                                                </ul>
+                                            </li>
+                                            <li>PSIQUIATRIA</li>
+                                            <li>TERAPIA OCUPACIONAL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="5" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-5" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="5"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>Acolher Psicologia e Saúde</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS DF </td>
+                                                    <td>ESSENCIAL DISTRITO FEDERAL</td>
+                                                    <td>479915181</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS ENF</td>
+                                                    <td>ESSENCIAL ENFERMARIA</td>
+                                                    <td>473595151</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES ENF I</td>
+                                                    <td>ESSENCIAL ENFERMARIA I</td>
+                                                    <td>476300169</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT I</td>
+                                                    <td>INTEGRAL I</td>
+                                                    <td>473598156</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT II</td>
+                                                    <td>INTEGRAL II</td>
+                                                    <td>473597158</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT III </td>
+                                                    <td>INTEGRAL III</td>
+                                                    <td>473592157</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT IV</td>
+                                                    <td>INTEGRAL IV</td>
+                                                    <td>473600151</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT IX</td>
+                                                    <td>INTEGRAL IX</td>
+                                                    <td>473596150</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>INT V</td>
+                                                    <td>INTEGRAL V</td>
+                                                    <td>473594153</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="5" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>                                    
+                                <h2>
+                                    <small>Hospital Geral <small>Emergência/Urgência</small>:</small>
+                                    <strong>Hospital São José</strong>
+                                    <small>Adasmedica Adm. e Assist. Medica Hospitalar LTDA  CNPJ: 07.052.462/0001-00</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-6" data-link="6" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-6" data-link="6" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Avenida Conego Jeronimo Pimentel - Qd 329 s/n</p>
+                                            <p>Vila dos Cabanos</p>
+                                            <p>68447-000 - Barbacena - PA</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (91)3754-7500 / (91)3754-7506 / (91)9915-47258 / (91)3754-7500 / (91)3754-7541 / (91)3754-7568</p>
+                                            <p><a href="http://www.hsjpa.net" target="_blank">http://www.hsjpa.net</a></p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=AVENIDA%20CONEGO%20JERONIMO%20PIMENTEL%20-%20QD%20329,%20S/N+BARCARENA" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-6" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="6"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>Hospital São José</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>NUTRICAO</li>
+                                            <li>FONOAUDIOLOGIA</li>
+                                            <li>LABORATORIO</li>
+                                            <li>ANATOMIA PATOLOGICA E CITOPATOLOGIA</li>
+                                            <li>NEUROLOGIA</li>
+                                            <li>ANGIOLOGIA</li>
+                                            <li>CARDIOLOGIA</li>
+                                            <li>CIRURGIA GERAL</li>
+                                            <li>CLINICA MEDICA</li>
+                                            <li>DERMATOLOGIA</li>
+                                            <li>ENDOSCOPIA</li>
+                                            <li>GASTROENTEROLOGIA</li>
+                                            <li>GINECOLOGIA E OBSTETRICIA</li>
+                                            <li>MASTOLOGIA</li>
+                                            <li>ORTOPEDIA E TRAUMATOLOGIA</li>
+                                            <li>OTORRINOLARINGOLOGIA</li>
+                                            <li>PEDIATRIA</li>
+                                            <li>RADIOLOGIA E DIAGNOSTICO POR IMAGEM</li>
+                                            <li>PSICOLOGIA</li>
+                                            <li>UROLOGIA</li>
+                                            <li>COLOPROCTOLOGIA</li>
+                                            <li>CIRURGIA PLASTICA</li>
+                                            <li>COLONOSCOPIA</li>
+                                            <li>ENDOSCOPIA DIGESTIVA</li>
+                                            <li>MAMOGRAFIA</li>
+                                            <li>MAPA (MONITORIZACAO AMBULATORIAL DE PRESSAO ARTERIAL)</li>
+                                            <li>RESSONANCIA MAGNETICA</li>
+                                            <li>ULTRASSONOGRAFIA GERAL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="6" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-6" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="6"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>Hospital São José</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="6" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>                                    
+                                <h2>
+                                    <small>Hospital Geral <small>Emergência/Urgência</small>:</small>
+                                    <strong>Clínica Dr Ricardo Guimaraes <span>Cancelado*</span></strong>
+                                    <small>Hospital de Olhos de Minas Gerais S/C CNPJ: 65.279.663/0001-32</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-7" data-link="7" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                    </div>
+                                    <div class="result-guide-graduate mt-2">
+                                        <div class="form-legend">
+                                            <ul>
+                                                <li>
+                                                    <img src="images/icon-ans-eventos-adversos.jpg">
+                                                    <p>Comunicação de Eventos Adversos</p>
+                                                </li>
+                                                <li>
+                                                    <img src="images/icon-ans-acreditacao.jpg">
+                                                    <p>Programa de Acreditação</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Rua da Paisagem, 220</p>
+                                            <p>Vila da Serra</p>
+                                            <p>34000-000 - Nova Lima - MG</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (31)3289-2000 / (31)3289-2000</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=RUA%20DA%20PAISAGEM,%20%20220+NOVA%20LIMA" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <p><small>* Prestador cancelado em 13/11/18 e substituído por:</small></p>
+                                    </div>
+
+                                    <div class="accordion mt-1">
+                                        <div>                                    
+                                            <h2>
+                                                <small>Hospital Geral <small>Emergência/Urgência</small>:</small>
+                                                <strong>Centro Oftalmologico de Minas Gerais</strong>
+                                                <small>Centro Oftalmologico de Minas Gerais S.A. CNPJ: 17.357.641/0001-09</small>
+                                            </h2>
+                                            <div class="accordion-body">
+                                                <div class="d-flex justify-content-between">
+                                                    <button id="btn-specialties-8" data-link="8" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                                    <button id="btn-plans-8" data-link="8" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                                </div>
+                                                <div class="result-guide-graduate mt-2">
+                                                    <div class="form-legend">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="images/icon-ans-acreditacao.jpg">
+                                                                <p>Programa de Acreditação</p>
+                                                            </li>
+                                                            <li>
+                                                                <img src="images/icon-ans-certificacao-iso.jpg">
+                                                                <p>Certificação ISO 9001</p>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="result-guide-address mt-2">
+                                                    <address>
+                                                        <p>Rua Santa Catarina, 941</p>
+                                                        <p>Lourdes</p>
+                                                        <p>30170-080 - Belo Horizonte - MG</p>
+                                                    </address>
+                                                    <div class="result-guide-contact mt-1">
+                                                        <p>Tel: (31)2519-4444 / (31)3232-4172 / (31)2532-5932 / (31)3232-4114 / (31)3232-5920 / (31)3232-4125</p>
+                                                        <p><a href="http://www.centrooftalmologicomg.com.br" target="_blank"> http://www.centrooftalmologicomg.com.br</a></p>
+                                                    </div>
+                                                    <div class="result-guide-local mt-1">
+                                                        <a href="http://maps.google.com.br/maps?q=RUA%20SANTA%20CATARINA,%20941+BELO%20HORIZONTE" target="_blank" title="ver mapa no google">
+                                                            <figure>
+                                                                <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                            </figure>
+                                                            <span>Como chegar</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-7" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="7"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>Clínica Dr Ricardo Guimaraes</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>OFTALMOLOGIA</li>
+                                            <li>ANESTESIOLOGIA</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="7" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="specialties-8" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="8"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>Centro Oftalmologico de Minas Gerais</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>OFTALMOLOGIA</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="8" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-8" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="8"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>Centro Oftalmologico de Minas Gerais</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="8" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>                                    
+                                <h2>
+                                    <small>Médico:</small>
+                                    <strong>Dirceu Barbosa</strong>
+                                    <small>CRM-MG 5785</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-9" data-link="9" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-9" data-link="9" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+                                    <div class="result-guide-graduate mt-2">
+                                        <div class="form-legend">
+                                            <ul>
+                                                <li>
+                                                    <img src="images/icon-ans-eventos-adversos.jpg">
+                                                    <p>Comunicação de Eventos Adversos</p>
+                                                </li>
+                                                <li>
+                                                    <img src="images/icon-ans-especialista.jpg">
+                                                    <p>Título de Especialista</p>
+                                                </li>
+                                                <li>
+                                                    <img src="images/icon-ans-pos-graduacao.jpg">
+                                                    <p>Pós Graduação Lato Sensu</p>
+                                                </li>
+                                                <li>
+                                                    <img src="images/icon-ans-residencia.jpg">
+                                                    <p>Residência</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Avenida Conego Jeronimo Pimentel - Qd 329 s/n</p>
+                                            <p>Vila dos Cabanos</p>
+                                            <p>68447-000 - Barbacena - PA</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (31)3222-7922 / (31)9999-47922</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=AVENIDA%20PASTEUR,%20N%2040,%20SALA%20304+BELO%20HORIZONTE" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-9" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="9"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>Dirceu Barbosa</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>GINECOLOGIA E OBSTETRICIA</li>
+                                            <li>GINECOLOGIA PRE NATAL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="9" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-9" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="9"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>Dirceu Barbosa</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="9" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>                                    
+                                <h2>
+                                    <small>Médico:</small>
+                                    <strong>Conrado Rezende Ribeiro <span>Cancelado*</span></strong>
+                                    <small>CRM-MG 29633</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-10" data-link="10" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                    </div>
+                                    <div class="result-guide-graduate mt-2">
+                                        <div class="form-legend">
+                                            <ul>
+                                                <li>
+                                                    <img src="images/icon-ans-especialista.jpg">
+                                                    <p>Título de Especialista</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Avenida Nove c/ 22 e 24, 454</p>
+                                            <p>Centro</p>
+                                            <p>38300-150 - Ituiutaba - MG</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (34)3261-0265 2</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=AVENIDA%20PASTEUR,%20N%2040,%20SALA%20304+BELO%20HORIZONTE" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="result-guide-info mt-2">
+                                        <h3>Observação</h3>
+                                        <p><small>*****Liberação de Ultrasson para o Prestador somente para usuários da Rede Global*****</small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-10" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="10"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>Conrado Rezende Ribeiro</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>RADIOLOGIA E DIAGNOSTICO POR IMAGEM</li>
+                                            <li>CLINICA MEDICA</li>
+                                            <li>ULTRASSONOGRAFIA GERAL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="10" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 mb-1">
+                        <div class="accordion">
+                            <div>                                    
+                                <h2>
+                                    <small>Hospital e Maternidade <small>Emergência/Urgência</small>:</small>
+                                    <strong>Hospital São Sebastião de Tarumirim</strong>
+                                    <small>AHSST - ASSOCIACAO HOSPITALAR SAO SEBATIAO DE TARUMIRIM - CNPJ: 21.249.081/0001-38</small>
+                                </h2>
+                                <div class="accordion-body">
+                                    <div class="d-flex justify-content-between">
+                                        <button id="btn-specialties-11" data-link="11" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-specialties">Especialidades</button>
+                                        <button id="btn-plans-11" data-link="11" type="button" class="btn-tp-4 btn-cl-3 btn-pd-5 js-plans">Planos Atendidos</button>
+                                    </div>
+                                    <div class="result-guide-address mt-2">
+                                        <address>
+                                            <p>Rua Manoel Joaquim de Andrade, 301</p>
+                                            <p>Centro</p>
+                                            <p>35140-000 - Tarumirim - MG</p>
+                                        </address>
+                                        <div class="result-guide-contact mt-1">
+                                            <p>Tel: (33)3233-1268</p>
+                                        </div>
+                                        <div class="result-guide-local mt-1">
+                                            <a href="http://maps.google.com.br/maps?q=RUA%20MANOEL%20JOAQUIM%20DE%20ANDRADE,%20301+TARUMIRIM" target="_blank" title="ver mapa no google">
+                                                <figure>
+                                                    <svg enable-background="new 0 0 90 90" version="1.1" viewBox="0 0 90 90" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="m72.6 79.4l-9.8-20.6c-0.2-0.4-0.5-0.7-0.9-0.9l-4.9-2.2 8.4-14.1s0-0.1 0.1-0.1c1.7-3.3 2.5-6.8 2.5-10.5 0-6.2-2.4-12-6.9-16.4-4.4-4.3-10.2-6.7-16.4-6.6-6 0.1-11.7 2.5-16 6.8s-6.7 10-6.7 16.1c0 3.7 0.8 7.4 2.5 10.6 0 0 0 0.1 0.1 0.1l8.4 14.1-4.9 2.2c-0.4 0.2-0.7 0.5-0.9 0.9l-9.8 20.6c-0.3 0.7-0.2 1.5 0.3 2.1 0.5 0.5 1.4 0.7 2 0.4l12.3-5.5 12.2 5.4c0.5 0.2 1 0.2 1.5 0l12.3-5.4 12.2 5.4c0.2 0.1 0.5 0.2 0.7 0.2 0.5 0 1-0.2 1.3-0.5 0.6-0.6 0.7-1.4 0.4-2.1zm-44.9-39.6c-1.4-2.8-2.1-5.8-2.1-8.9 0.1-10.5 8.6-19.1 19.1-19.2 5.2-0.1 10.2 1.9 13.9 5.6s5.8 8.6 5.8 13.8c0 3.1-0.7 6-2.1 8.8l-15.7 26.2c-0.5 0.8-1.3 0.9-1.6 0.9s-1.1-0.1-1.6-0.9l-15.7-26.3zm31 32.9c-0.5-0.2-1-0.2-1.5 0l-12.2 5.5-12.2-5.4c-0.5-0.2-1-0.2-1.5 0l-8.5 3.8 7.4-15.6 4.7-2.1 5.4 9.1c1 1.7 2.8 2.7 4.7 2.7s3.7-1 4.7-2.7l5.4-9.1 4.7 2.1 7.4 15.6-8.5-3.9z"/><path d="m45 22.7c-4.6 0-8.3 3.7-8.3 8.3s3.7 8.3 8.3 8.3 8.3-3.7 8.3-8.3-3.7-8.3-8.3-8.3zm0 13c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7-2.1 4.7-4.7 4.7z"/></svg>
+                                                </figure>
+                                                <span>Como chegar</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="specialties-11" class="result-guide-modal result-specialties" role="">
+                            <i class="js-close-specialties" data-link="11"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Especialidades <small>Hospital São Sebastião de Tarumirim</small></h3>
+                                    <div class="mt-2">
+                                        <ul>
+                                            <li>ANESTESIOLOGIA</li>
+                                            <li>ANGIOLOGIA</li>
+                                            <li>CARDIOLOGIA</li>
+                                            <li>CIRURGIA GERAL</li>
+                                            <li>CIRURGIA PEDIATRICA</li>
+                                            <li>CLINICA MEDICA</li>
+                                            <li>DERMATOLOGIA</li>
+                                            <li>GINECOLOGIA E OBSTETRICIA</li>
+                                            <li>LABORATORIO</li>
+                                            <li>ANATOMIA PATOLOGICA E CITOPATOLOGIA</li>
+                                            <li>NUTRICAO</li>
+                                            <li>OFTALMOLOGIA</li>
+                                            <li>ORTOPEDIA E TRAUMATOLOGIA</li>
+                                            <li>RADIOLOGIA E DIAGNOSTICO POR IMAGEM</li>
+                                            <li>ULTRASSONOGRAFIA GERAL</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="11" type="button" class="js-close-specialties result-guide-modal-off" aria-label="Fechar lista de especialidades" title="Sair da lista de especialidades">
+                                <span class="sr-only">Sair da lista de especialidades</span>
+                            </button>
+                        </div>
+
+                        <div id="plans-11" class="result-guide-modal result-plans" role="">
+                            <i class="js-close-plans" data-link="11"></i>
+                            <div class="container">
+                                <div class="result-guide-list">
+                                    <h3 class="title title-m">Lista de Planos Atendidos <small>Hospital São Sebastião de Tarumirim</small></h3>
+                                    <div class="mt-2">
+                                        <table>         
+                                            <thead>
+                                                <tr>
+                                                    <th>Código</th>
+                                                    <th>Nome</th>
+                                                    <th>Registro</th>
+                                                    <th>Tipo de Contratação</th>
+                                                    <th>Situação</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>     
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>2066</td>
+                                                    <td>BUSINESS-AE-RC1200-CE-REF&nbsp;</td>
+                                                    <td>435344017</td>     
+                                                    <td>Coletivo empresarial</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ESS APTO</td>
+                                                    <td>ESSENCIAL APARTAMENTO</td>
+                                                    <td>473599154</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                                <tr>
+                                                    <td>ES APT II</td>
+                                                    <td>ESSENCIAL APARTAMENTO II</td>
+                                                    <td>476299161</td>     
+                                                    <td>Coletivo por adesão</td>  
+                                                    <td>Ativo</td>        
+                                                </tr> 
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <button data-link="11" type="button" class="js-close-plans result-guide-modal-off" aria-label="Fechar lista de planos atendidos" title="Sair da lista de planos atendidos">
+                                <span class="sr-only">Sair da lista de planos atendidos</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col col-12 mt-2 text-right">
+                        <button type="button" class="btn-tp-4 btn-cl-1 btn-pd-1 mt-2">Imprimir</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 col-lg-4">
-                    <div class="">
-                        <h2 class="title title-l mb-1 mt-4 mt-md-2 ml-0 ml-md-1">Legenda:</h2>
-                        <div class="form-legend ml-0 ml-md-1">
-                            <ul>
-                                <li>
-                                    <img src="images/icon-ans-acreditacao.jpg">
-                                    <p>Programa de Acreditação</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-eventos-adversos.jpg">
-                                    <p>Comunicação de Eventos Adversos</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-pos-graduacao.jpg">
-                                    <p>Pós Graduação Lato Sensu</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-residencia.jpg">
-                                    <p>Residência</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-especialista.jpg">
-                                    <p>Título de Especialista</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-qualidade-monitorada.jpg">
-                                    <p>Qualidade Monitorada</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-entidades-gestoras.jpg">
-                                    <p>Certificações de Entidades Gestoras de Outros Programas de Qualidade</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-certificacao-iso.jpg">
-                                    <p>Certificação ISO 9001</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-doutorado.jpg">
-                                    <p>Doutorado / Pós-Doutorado</p>
-                                </li>
-                                <li>
-                                    <img src="images/icon-ans-mestrado.jpg">
-                                    <p>Mestrado</p>
-                                </li>
-                            </ul>
+
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="pagination">
+                            <a href="#">Anterior</a>
+                            <span class="active">1</span>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <span>...</span>
+                            <a href="#">18</a>
+                            <a href="#">Próximo</a>
                         </div>
                     </div>
                 </div>

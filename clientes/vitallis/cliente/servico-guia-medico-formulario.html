@@ -317,7 +317,7 @@
         </div>
     </div>
 
-    <section class="section-ratio-5">
+    <section class="section-ratio-6">
         <div class="container">
             <div class="row justify-content-md-center text-center">
                 <div class="col-12 col-lg-7 col-xl-6">
@@ -331,18 +331,19 @@
                 <form action="" name="">
                     <div class="row mt-1 justify-content-between">
                         <div class="col col-12 mt-2">
-                            <label>Se você é cliente, digite o código do cartão:</label>
+                            <label>Para facilitar o preenchimento do formulário, digite o código do beneficiário presente no seu cartão:</label>
                         </div>
-                        <div class="col col-12 col-lg-4">
-                            <label for="codigo">Código do beneficiário <span class="js-info-popup">i</span>
+                        <div class="col col-12 col-sm-7 col-md-6 col-lg-4">
+                            <label for="codigo">Código do beneficiário <span class="js-info-popup" title="Foto da carteirinha do beneficiário">i</span>
                                 <div class="form-info">
                                     <img src="images/temp-carteirinha-exemplo.jpg">
                                 </div>
                             </label>
-                            <input type="text" class="" id="codigo">
+                            <input type="text" class="js-codigo" id="js-codigo">
                         </div>
-                        <div class="col col-12 col-lg-4"></div>
-                        <div class="col col-12 col-lg-4"></div>
+                        <div class="col col-12 col-sm-5 col-md-6 col-lg-8">
+                            <button type="button" class="btn-tp-4 btn-cl-3 btn-pd-3 mt-2 js-prosseguir disabled" title="Informar código do beneficiário">Prosseguir</button>
+                        </div>
                         <div class="col col-12 col-lg-4 mt-2">
                             <label for="rede">Tipo de Rede</label>
                             <select class="" id="rede">
@@ -426,8 +427,8 @@
                         <div class="col col-12 mt-2">
                             <div class="row justify-content-center">
                                 <div class="col col-12 col-sm-8 col-lg-md-6 col-lg-4 d-flex justify-content-between align-items-center">
-                                    <a href="#" class="btn-link mt-2 js-advanced">Busca Avançada</a>
-                                    <button type="button" class="btn-tp-4 btn-cl-1 btn-pd-1 mt-2">Listar</button>
+                                    <a href="#" class="btn-link mt-2 js-advanced" title="Exibir mais campos na busca">Busca Avançada</a>
+                                    <button type="button" class="btn-tp-4 btn-cl-1 btn-pd-1 mt-2" title="Buscar por prestadores credenciados">Listar</button>
                                 </div>
                             </div>
                         </div>
@@ -435,10 +436,15 @@
                 </form>
             </div>
             <div class="result-guide ml-xl-2 mr-xl-2 mt-4"><hr>
+                <div class="row d-none d-lg-block">
+                    <div class="col col-12 mt-2 text-right">
+                        <button type="button" class="btn-tp-4 btn-cl-3 btn-pd-1 mt-2 js-expand-all" title="Expandir o conteúdo de todos os resultados da busca">expandir todos</button>
+                    </div>
+                </div>
                 <div class="row mt-2">
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">
                                 <h2>
                                     <small>Clínica:</small>
                                     <strong>A & E Centro de Medicina Avançada</strong>
@@ -632,8 +638,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">
                                 <h2>
                                     <small>Clínica:</small>
                                     <strong>A Clínica Opus Medicina</strong>
@@ -830,8 +836,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>                                    
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">                                    
                                 <h2>
                                     <small>Clínica:</small>
                                     <strong>A. Fratezi Serviços de Saúde S/S LTDA</strong>
@@ -960,8 +966,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">
                                 <h2>
                                     <small>Laboratório:</small>
                                     <strong>ACIL - Análises Clínicas Ipatinga</strong>
@@ -1145,8 +1151,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>                                    
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">                                 
                                 <h2>
                                     <small>Clínica:</small>
                                     <strong>Acolher Psicologia e Saúde</strong>
@@ -1319,8 +1325,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>                                    
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">                                    
                                 <h2>
                                     <small>Hospital Geral <small>Emergência/Urgência</small>:</small>
                                     <strong>Hospital São José</strong>
@@ -1476,8 +1482,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>                                    
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">                                   
                                 <h2>
                                     <small>Hospital Geral <small>Emergência/Urgência</small>:</small>
                                     <strong>Clínica Dr Ricardo Guimaraes <span>Cancelado*</span></strong>
@@ -1690,8 +1696,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>                                    
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">                                   
                                 <h2>
                                     <small>Médico:</small>
                                     <strong>Dirceu Barbosa</strong>
@@ -1842,8 +1848,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>                                    
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">                                   
                                 <h2>
                                     <small>Médico:</small>
                                     <strong>Conrado Rezende Ribeiro <span>Cancelado*</span></strong>
@@ -1911,8 +1917,8 @@
                     </div>
 
                     <div class="col-12 col-lg-6 mb-1">
-                        <div class="accordion">
-                            <div>                                    
+                        <div class="accordion js-accordion-open">
+                            <div class="accordion-open-close">                                     
                                 <h2>
                                     <small>Hospital e Maternidade <small>Emergência/Urgência</small>:</small>
                                     <strong>Hospital São Sebastião de Tarumirim</strong>
@@ -2057,7 +2063,8 @@
 
                 <div class="row">
                     <div class="col col-12 mt-2 text-right">
-                        <button type="button" class="btn-tp-4 btn-cl-1 btn-pd-1 mt-2">Imprimir</button>
+                        <button type="button" class="btn-tp-4 btn-cl-3 btn-pd-1 mt-2 mr-1" title="Conferir a lista de prestadores que foram substituídos">Substituição de prestadores</button>
+                        <button type="button" class="btn-tp-4 btn-cl-1 btn-pd-1 mt-2 d-none d-lg-inline" title="Imprimir os resultados listados">Imprimir</button>
                     </div>
                 </div>
 
@@ -2085,7 +2092,6 @@
                     <h2 class="title text-inverse">Serviços Online</h2>
                     <p class="text text-inverse">Disponibilizamos serviços e informações que podem ser acessados online, garantindo mais agilidade e comodidade para você resolver suas demandas sem sair de casa. São exemplos desse tipo de serviços: solicitação da segunda via de boletos ou cartão cliente, demonstrativo de Imposto de Renda e extrato de utilização do plano.</p>
                     <a href="#" class="btn-tp-1 btn-cl-2 btn-pd-3">Autorização de Procedimentos e Exames</a>
-                    <a href="#" class="btn-tp-1 btn-cl-2 btn-pd-3">Substituição de Prestadores</a>
                 </div>
             </div>
         </div>

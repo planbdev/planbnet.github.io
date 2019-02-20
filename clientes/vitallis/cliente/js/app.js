@@ -4808,6 +4808,60 @@ var HIDDEN_CLASS = 'noscrolling';
     }
 })();
 
+// EXPAND GUIA MEDICO RESULTS
+(function () {
+    var RESULT_GUIDE = document.querySelector('.result-guide-modal');
+
+    if (RESULT_GUIDE != null) {
+        var EXPAND_ACCORDION = document.querySelector('.js-expand-all');
+        var ACCORDION_TO_EXPAND = document.querySelectorAll('.js-accordion-open');
+
+        EXPAND_ACCORDION.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            ACCORDION_TO_EXPAND.forEach(function (item) {
+                if (!item.getElementsByClassName('accordion-open-close')[0].classList.contains('open')) {
+                    item.getElementsByTagName('h2')[0].click();
+                }
+            });
+            return false;
+        });
+    }
+})();
+
+// CODIGO DO BENEFICIARIO FIELD VALIDATION
+(function () {
+    var NEXT_GUIDE = document.querySelector('.js-prosseguir');
+    var CODE_FIELD = document.getElementById('js-codigo');
+
+    function setInputFilter(textbox, inputFilter) {
+        ['input', 'keydown', 'keyup', 'mousedown', 'mouseup', 'select', 'contextmenu', 'drop'].forEach(function (event) {
+            textbox.addEventListener(event, function () {
+                if (inputFilter(this.value)) {
+                    this.oldValue = this.value;
+                    this.oldSelectionStart = this.selectionStart;
+                    this.oldSelectionEnd = this.selectionEnd;
+                } else if (this.hasOwnProperty('oldValue')) {
+                    this.value = this.oldValue;
+                    this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                }
+                if (CODE_FIELD.value.length >= 6) {
+                    NEXT_GUIDE.classList.remove('disabled');
+                } else {
+                    NEXT_GUIDE.classList.add('disabled');
+                }
+            });
+        });
+    }
+
+    if (NEXT_GUIDE != null) {
+        setInputFilter(document.getElementById('js-codigo'), function (value) {
+            return (/^\d*$/.test(value)
+            );
+        });
+    }
+})();
+
 function homeSlider() {
     var HOME_HERO_CNT = document.querySelector('.hero-home-carousel-cnt');
     if (HOME_HERO_CNT !== null) {
